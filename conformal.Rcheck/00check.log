@@ -1,0 +1,104 @@
+* using log directory '/Users/icortes/Desktop/conformal/conformal.Rcheck'
+* using R version 3.0.1 (2013-05-16)
+* using platform: x86_64-apple-darwin10.8.0 (64-bit)
+* using session charset: ASCII
+* checking for file 'conformal/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'conformal' version '0.1'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .DS_Store
+  R/.DS_Store
+  man/.Rapp.history
+These were most likely included in error. See section 'Package
+structure' in the 'Writing R Extensions' manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package 'conformal' can be installed ... WARNING
+Found the following significant warnings:
+  Warning: package 'caret' was built under R version 3.0.2
+  Warning: package 'lattice' was built under R version 3.0.2
+  Warning: /Users/icortes/Desktop/conformal/conformal/man/LogS.Rd:16: unknown macro '\texttt'
+  Warning: /Users/icortes/Desktop/conformal/conformal/man/LogS.Rd:17: unknown macro '\texttt'
+  Warning: /Users/icortes/Desktop/conformal/conformal/man/LogS.Rd:17: unknown macro '\texttt'
+  Warning: package 'caret' was built under R version 3.0.2
+  Warning: package 'lattice' was built under R version 3.0.2
+See '/Users/icortes/Desktop/conformal/conformal.Rcheck/00install.out' for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking for unstated dependencies in R code ... WARNING
+package 'methods' is used but not declared
+See the information on DESCRIPTION files in the chapter 'Creating R
+packages' of the 'Writing R Extensions' manual.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+File 'conformal/R/onLoad.R':
+  .onLoad calls:
+    packageStartupMessage("Conformal prediction in R. Isidro Cortes-Ciriano <isidrolauscher@gmail.com>")
+    require(ggplot2)
+    require(grid)
+    require(caret)
+
+Package startup functions should not change the search path.
+See section 'Good practice' in '?.onAttach'.
+* checking Rd files ... WARNING
+Error : ConformalReg.Rd: non-ASCII input and no declared encoding
+
+prepare_Rd: LogS.Rd:16: unknown macro '\texttt'
+prepare_Rd: LogS.Rd:17: unknown macro '\texttt'
+prepare_Rd: LogS.Rd:5-7: Dropping empty section \description
+prepare_Rd: LogS.Rd:9-11: Dropping empty section \format
+prepare_Rd: LogS.Rd:20-21: Dropping empty section \source
+checkRd: (5) LogS.Rd:0-30: Must have a \description
+problem found in 'ConformalReg.Rd'
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  'GetCVPreds' 'StandardMeasure' 'error_model' 'expGrid'
+Undocumented data sets:
+  'LogSDescsTest' 'LogSDescsTrain' 'LogSTest' 'LogSTrain'
+Undocumented S4 classes:
+  'ConformalReg'
+All user-level objects in a package (including S4 classes and methods)
+should have documentation entries.
+See the chapter 'Writing R documentation files' in the 'Writing R
+Extensions' manual.
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of 'data' directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... WARNING
+  
+  Note: significantly better compression could be obtained
+        by using R CMD build --resave-data
+             old_size new_size compress
+  LogS.RData   1003Kb    869Kb       xz
+* checking examples ... OK
+* checking PDF version of manual ... OK
+WARNING: There were 5 warnings.
+NOTE: There were 2 notes.
+See
+  '/Users/icortes/Desktop/conformal/conformal.Rcheck/00check.log'
+for details.

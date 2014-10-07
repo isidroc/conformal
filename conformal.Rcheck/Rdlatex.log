@@ -1,0 +1,335 @@
+Hmm ... looks like a package
+
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012)
+ restricted \write18 enabled.
+entering extended mode
+
+(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/Rtmp4wSpgT/Rd2pdf1a80
+f858b1/Rd2.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty) NOT loading ae
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.def))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/times.sty)
+NOT loading lmodern
+(/usr/local/texlive/2012/texmf-dist/tex/latex/inconsolata/inconsolata.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1enc.def))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+(/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/hyperref.cfg))
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 356.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 356.
+
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/base/makeidx.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.dfu)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ot1enc.dfu)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omsenc.dfu)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1enc.dfu))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/latin1.def))
+Writing index file Rd2.idx
+No file Rd2.aux.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/inconsolata/t1fi4.fd)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/t1phv.fd)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [1{/usr/local/texl
+ive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (14.28088pt too wide) in paragraph at lines 69--69
+ []\T1/fi4/m/n/9 tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, powe
+r.to=-6, power.by=1, base=2),[] 
+
+Overfull \hbox (23.28088pt too wide) in paragraph at lines 85--85
+ []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=ErrorModel,Con
+formityMeasure=StandardMeasure)[] 
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [2]
+No file Rd2.ind.
+[3] (./Rd2.aux)
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information){/usr/local/texlive/2012/te
+xmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2012/texmf-dist/fonts/
+enc/dvips/inconsolata/fi4-ec.enc}</usr/local/texlive/2012/texmf-dist/fonts/type
+1/public/inconsolata/Inconsolata.pfb></usr/local/texlive/2012/texmf-dist/fonts/
+type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/u
+rw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (3 pages, 61731 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.15 [TeX Live 2012] (kpathsea + Thai support).
+Scanning input file ./Rd2.idx....done (4 entries accepted, 0 rejected).
+Sorting entries....done (10 comparisons).
+Generating output file ./Rd2.ind....done (16 lines written, 0 warnings).
+Output written in ./Rd2.ind.
+Transcript written in ./Rd2.ilg.
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012)
+ restricted \write18 enabled.
+entering extended mode
+
+(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/Rtmp4wSpgT/Rd2pdf1a80
+f858b1/Rd2.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty) NOT loading ae
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.def))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/times.sty)
+NOT loading lmodern
+(/usr/local/texlive/2012/texmf-dist/tex/latex/inconsolata/inconsolata.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1enc.def))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+(/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/hyperref.cfg))
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 356.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 356.
+
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/base/makeidx.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.dfu)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ot1enc.dfu)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omsenc.dfu)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1enc.dfu))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/latin1.def))
+Writing index file Rd2.idx
+(./Rd2.aux) (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+(./Rd2.out) (./Rd2.out)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/inconsolata/t1fi4.fd)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/t1phv.fd) (./Rd2.toc)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [1{/usr/local/texl
+ive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (14.28088pt too wide) in paragraph at lines 69--69
+ []\T1/fi4/m/n/9 tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, powe
+r.to=-6, power.by=1, base=2),[] 
+
+Overfull \hbox (23.28088pt too wide) in paragraph at lines 85--85
+ []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=ErrorModel,Con
+formityMeasure=StandardMeasure)[] 
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [2] (./Rd2.ind
+[3] [4]) (./Rd2.aux)
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information){/usr/local/texlive/2012/te
+xmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2012/texmf-dist/fonts/
+enc/dvips/inconsolata/fi4-ec.enc}</usr/local/texlive/2012/texmf-dist/fonts/type
+1/public/inconsolata/Inconsolata.pfb></usr/local/texlive/2012/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
+ype1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/ur
+w/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/ut
+mr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (4 pages, 70226 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.15 [TeX Live 2012] (kpathsea + Thai support).
+Scanning input file ./Rd2.idx....done (4 entries accepted, 0 rejected).
+Sorting entries....done (10 comparisons).
+Generating output file ./Rd2.ind....done (16 lines written, 0 warnings).
+Output written in ./Rd2.ind.
+Transcript written in ./Rd2.ilg.
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012)
+ restricted \write18 enabled.
+entering extended mode
+
+(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/Rtmp4wSpgT/Rd2pdf1a80
+f858b1/Rd2.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/alltt.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty) NOT loading ae
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.def))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/times.sty)
+NOT loading lmodern
+(/usr/local/texlive/2012/texmf-dist/tex/latex/inconsolata/inconsolata.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1enc.def))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty))
+(/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/hyperref.cfg))
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 356.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 356.
+
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/base/makeidx.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.dfu)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ot1enc.dfu)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omsenc.dfu)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1enc.dfu))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/latin1.def))
+Writing index file Rd2.idx
+(./Rd2.aux) (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+(./Rd2.out) (./Rd2.out)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/inconsolata/t1fi4.fd)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/t1phv.fd) (./Rd2.toc)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [1{/usr/local/texl
+ive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (14.28088pt too wide) in paragraph at lines 69--69
+ []\T1/fi4/m/n/9 tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, powe
+r.to=-6, power.by=1, base=2),[] 
+
+Overfull \hbox (23.28088pt too wide) in paragraph at lines 85--85
+ []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=ErrorModel,Con
+formityMeasure=StandardMeasure)[] 
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [2] (./Rd2.ind
+[3] [4]) (./Rd2.aux) )
+(see the transcript file for additional information){/usr/local/texlive/2012/te
+xmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2012/texmf-dist/fonts/
+enc/dvips/inconsolata/fi4-ec.enc}</usr/local/texlive/2012/texmf-dist/fonts/type
+1/public/inconsolata/Inconsolata.pfb></usr/local/texlive/2012/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
+ype1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/ur
+w/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/ut
+mr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (4 pages, 70867 bytes).
+Transcript written on Rd2.log.
+Saving output to 'conformal-manual.pdf' ...
+Done
+You may want to clean up by 'rm -rf /var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T//Rtmp4wSpgT/Rd2pdf1a80f858b1'
