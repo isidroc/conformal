@@ -1,0 +1,79 @@
+## Isidro Cortés Ciriano. 10/2014
+## Conformal Prediction for caret classification models
+
+
+#############################################
+### Conformal Prediction for Classification
+#############################################
+
+ConformalClassification <- setRefClass(
+  "ConformalClassification",
+  fields = list(
+    ClassificationModel = "ANY",
+    confidence = "numeric",
+    data.new = "ANY",
+    MondrianICPCV ="ANY",
+    ClassPredictions = "ANY",
+    p.values = "ANY",
+    plot = "ANY"
+  ),
+  methods = list(
+    initialize = function(confi = 0.8)
+    {
+      "This method is called when you create an instance of the class."
+      if (confi > 1 || confi < 0)
+        stop("Confidence must be between 0 and 1")
+      confidence <<- confi
+      cat("Conformal Prediction Class for Classification Instantiated")
+      cat("\n")
+    },
+    CalculateCVAlphas = function(model=NULL)
+    {
+      if(is.null(model))
+        stop("To calculate the alphas, a point prediction model and an error model 
+             need to be suppplied")
+      if(model$modelType != "Classification" )
+        stop("The model type needs to be 'Classification'")     
+      ClassificationModel <<- model
+      print("Calculating the vector of nonconformity measures for the CV predictions (label wise Mondrian ICP)..")
+      cat('\n')
+      MondrianICP <- model$finalModel$votes
+      MondrianICP <- apply(MondrianICP, 2, sort, decreasing=FALSE)
+      MondrianICPCV <<- MondrianICP
+    },
+    CalculatePValues = function(new.data=NULL)
+    {
+      if (is.null(new.data)){
+        stop("\nArgument 'data.new' cannot be empty.\nNew datapoints are required as input\n")
+      }
+      else{
+        data.new <<- new.data
+      }
+      require("caret") || stop("Pacakge 'caret' is required to make new predictions")
+      
+      print("Classifying the input data..")
+      cat('\n')
+      pred <- predict(ClassificationModel$finalModel, newdata = new.data,predict.all=TRUE) # individual or aggregate
+      ClassPredictions <<- pred
+      ntrees <- model$finalModel$ntree
+      votes <- apply(pred$individual,1,function(x){table(x)})
+      out<-c()
+      for (i in colnames(MondrianICPCV)){
+        out<-cbind(out,sapply(votes,function(x) x[i]))
+      }
+      out[is.na(out)] <- 0
+      out <- out/ntrees
+      colnames(out) <- colnames(MondrianICPCV)
+      
+      pval <- t(apply(out,1,function(x){ apply(do.call(rbind, lapply(as.data.frame(t(MondrianICPCV)), "<", x)),2,sum)    }))
+      pval <- pval / nrow(MondrianICPCV)
+      # this also works but is slower
+      # library(plyr)
+      # now <- t(apply(out,1,function(x){ apply(aaply(MondrianICPCV, 1, "<", x),2,sum)    }))
+      # http://stackoverflow.com/questions/20596433/how-to-divide-each-row-of-a-matrix-by-elements-of-a-vector-in-r
+      pval_signif <- (pval > (1-confidence))*1
+      p.values <<- list(P.values = pval,Significance_p.values = pval_signif)
+    }
+
+  )
+  )

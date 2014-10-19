@@ -74,7 +74,7 @@ ConformalReg <- setRefClass(
       intervals <<- out
 
     },
-    CorrelationPlot = function(obs=NULL,pred=pointPredictions,intervals=intervals, margin = NULL, main = "", ylab = "Predicted", 
+    CorrelationPlot <- function(obs=NULL,pred=pointPredictions,intervals=intervals, margin = NULL, main = "", ylab = "Predicted", 
                                xlab = "Observed", PointSize =3, ColMargin = "blue", ErrorBarCol= "red",
                                ErrorBarSize = 0.5, ErrorBarWidth = 0.5, ErrorBarPosition= "identity", 
                                ErrorBarStat = "identity",TextSize = 15, 
