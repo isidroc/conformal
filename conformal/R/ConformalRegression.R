@@ -6,8 +6,8 @@
 ### Conformal Prediction for Regression
 #############################################
 
-ConformalReg <- setRefClass(
-  "ConformalReg",
+ConformalRegression <- setRefClass(
+  "ConformalRegression",
   fields = list(
     PointPredictionModel = "ANY",
     ErrorModel = "ANY",
