@@ -1,3 +1,35 @@
+\name{ConformalClassification}
+\alias{ConformalClassification}
+\title{Conformal Prediction For Classification}
+\description{
+R class to p.values for individual 
+predictions according to the conformal prediction framework.
+}
+\usage{
+ConformalClassification(...)
+}
+\arguments{
+
+}
+\details{
+}
+\value{
+
+}
+\references{
+Norinder et al. J. Chem. Inf. Model., 2014, 54 (6), pp 1596-1603
+DOI: 10.1021/ci5001168
+\url{http://pubs.acs.org/doi/abs/10.1021/ci5001168}
+}
+\author{
+Isidro Cortes-Ciriano <isidrolauscher@gmail.com>
+}
+
+
+\seealso{
+\code{\link{ConformalRegression}}
+}
+\examples{
 # Optional for parallel training
 #library(doMC)
 #registerDoMC(cores=4)
@@ -21,14 +53,12 @@ set.seed(3)
 model <- train(LogSDescsTrain, LogSTrain, algorithm,type="classification", 
                trControl=trControl)
 
-model$finalModel$ntree 
-predd <- GetCVPreds(model)
-dim(predd)
 
-
-# Instantiate the class and get the confidence intervals
+# Instantiate the class and get the p.values
 example <- ConformalClassification$new()
 example$CalculateCVAlphas(model=model)
 example$CalculatePValues(new.data=LogSDescsTest)
 example$p.values$P.values
 example$p.values$Significance_p.values
+
+}

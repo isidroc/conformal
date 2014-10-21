@@ -1,0 +1,185 @@
+\documentclass[a4paper]{book}
+\usepackage[times,inconsolata,hyper]{Rd}
+\usepackage{makeidx}
+\usepackage[latin1]{inputenc} % @SET ENCODING@
+% \usepackage{graphicx} % @USE GRAPHICX@
+\makeindex{}
+\begin{document}
+\chapter*{}
+\begin{center}
+{\textbf{\huge Conformal: an R package to calculate prediction errors in the conformal prediction framework}}
+\par\bigskip{\large \today}
+\end{center}
+\inputencoding{utf8}
+\HeaderA{conformal}{conformal: an R package to calculate prediction errors in the conformal prediction framework}{conformal}
+\aliasA{conformal-package}{conformal}{conformal.Rdash.package}
+%
+\begin{Description}\relax
+conformal permits the calculation of prediction errors in the conformal prediction framework:
+(i) p.values for classification, and
+(ii) confidence intervals for regression.
+\end{Description}
+%
+\begin{References}\relax
+Isidro Cortes <isidrolauscher@gmail.com>.
+conformal: an R package to calculate prediction errors in the conformal prediction framework
+
+Norinder et al. J. Chem. Inf. Model., 2014, 54 (6), pp 1596-1603        
+DOI: 10.1021/ci5001168       
+\url{http://pubs.acs.org/doi/abs/10.1021/ci5001168}
+
+\end{References}
+\inputencoding{utf8}
+\HeaderA{ConformalClassification}{Conformal Prediction For Classification}{ConformalClassification}
+%
+\begin{Description}\relax
+R class to p.values for individual 
+predictions according to the conformal prediction framework.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+ConformalClassification(...)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Author}\relax
+Isidro Cortes-Ciriano <isidrolauscher@gmail.com>
+\end{Author}
+%
+\begin{References}\relax
+Norinder et al. J. Chem. Inf. Model., 2014, 54 (6), pp 1596-1603
+DOI: 10.1021/ci5001168
+\url{http://pubs.acs.org/doi/abs/10.1021/ci5001168}
+\end{References}
+%
+\begin{SeeAlso}\relax
+\code{\LinkA{ConformalRegression}{ConformalRegression}}
+\end{SeeAlso}
+%
+\begin{Examples}
+\begin{ExampleCode}
+# Optional for parallel training
+#library(doMC)
+#registerDoMC(cores=4)
+
+data(LogS)
+
+# convert data to categorical
+LogSTrain[LogSTrain > -4] <- 1
+LogSTrain[LogSTrain <= -4] <- 2
+LogSTest[LogSTest > -4] <- 1
+LogSTest[LogSTest <= -4] <- 2
+
+LogSTrain <- factor(LogSTrain)
+LogSTest <- factor(LogSTest)
+
+algorithm <- "rf"
+
+trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE, 
+                          predict.all=TRUE,keep.forest=TRUE,norm.votes=TRUE)
+set.seed(3)
+model <- train(LogSDescsTrain, LogSTrain, algorithm,type="classification", 
+               trControl=trControl)
+
+
+# Instantiate the class and get the p.values
+example <- ConformalClassification$new()
+example$CalculateCVAlphas(model=model)
+example$CalculatePValues(new.data=LogSDescsTest)
+example$p.values$P.values
+example$p.values$Significance_p.values
+
+\end{ExampleCode}
+\end{Examples}
+\inputencoding{utf8}
+\HeaderA{ConformalRegression}{Conformal Prediction for Regression}{ConformalRegression}
+\keyword{\textbackslash{}textasciitilde{}ConformalRegression}{ConformalRegression}
+%
+\begin{Description}\relax
+R class to create and visualize confidence intervals for individual 
+predictions according to 
+the conformal prediction framework.
+\end{Description}
+%
+\begin{Details}\relax
+The class ConformalRegression contains the following fields:
+
+(i) PointPredictionModel: stores a point prediction model.
+(ii) ErrorModel: stores the error model.
+(iii) confidence: stores the level of confidence used to calculate the confidence intervals. This value is defined when instantiating a new class. Values are in the 0-1 range. 
+Interpretation: for instance, a confidence level of 0.8 (80\%) means that, at most, 20\% of the confidence intervals will not contain the 
+true value.
+(iv) data.new: stores the descriptors corresponding to an external set.
+(v)  alphas: stores the nonconformity scores calculated for the datapoints used to train the point prediction model (PointPredictionModel) with the method CalculateAlphas.
+(vi)  errorPredictions: errors in prediction for an external set calculated with the error model (stored in the field ErrorModel) with the method GetConfidenceIntervals.
+(vii) pointPredictions: point predictions for an external set calculated with the point prediction model (stored in the field PointPredictionModel) with the method GetConfidenceIntervals.
+(viii)  intervals: numeric vector with the errors in prediction for the external set (data.new) calculated in the conformal prediction framework (not with an error model).
+These intervals are calculated when calling the method GetConfidenceIntervals.
+(ix) plot: stores a correlation plot for the observed against the predicted values, with individual confidence intervals, for the datapoints in an external set. The plot is a ggplot2 object which can be further customized. The plot is generated with the method CorrelationPlot.
+
+The class ConformalRegression contains the following methods:
+(i) initialize: this method is called when you create an instance of the class. The confidence level (field confidence) needs to be defined.
+(ii) CalculateAlphas: this method calculates the vector of nonconformity scores for the datapoints in the traning set. These scores (or alphas) are stored in the field alphas. This method requires a point prediction model (argument model),
+an error model (argument error\_model), and a nonconformity measure (argument ConformityMeasure), such as \code{\LinkA{StandardMeasure}{StandardMeasure}}.
+(iii) GetConfidenceIntervals: this methods calculates confidence intervals for individual predictions in the conformal prediction framework. The methods requires an external set for which the confidence intervals will be calculated.
+The dimensionality of these descriptors need to be the same as the one used for the datapoints used to train the point prediction model and the error model. 
+The method uses the point prediciton and the error models stored in the fields PointPredictionModel and ErrorModel, respectively.
+Confidence intervals are calculated according to \Rhref{{http://pubs.acs.org/doi/abs/10.1021/ci5001168}{Norinder et al. 2014}}{}To define 
+Confidence intervals are defined as: point prediction (stored in the field pointPredictions) +/-  the output of the method GetConfidenceIntervals, which is stored in the field intervals.
+(iv) CorrelationPlot: this method generates a correlation plot for the observed against the predicted values for an external set, along with individual confidence intervals. 
+The plot is stored in the field plot.
+\end{Details}
+%
+\begin{Author}\relax
+Isidro Cortes-Ciriano <isidrolauscher@gmail.com>
+\end{Author}
+%
+\begin{References}\relax
+Norinder et al. J. Chem. Inf. Model., 2014, 54 (6), pp 1596-1603
+DOI: 10.1021/ci5001168
+\url{http://pubs.acs.org/doi/abs/10.1021/ci5001168}
+\end{References}
+%
+\begin{SeeAlso}\relax
+\code{\LinkA{ConformalClassification}{ConformalClassification}}
+\end{SeeAlso}
+%
+\begin{Examples}
+\begin{ExampleCode}
+#############################################
+### Example
+#############################################
+
+# Optional for parallel training
+#library(doMC)
+#registerDoMC(cores=4)
+
+data(LogS)
+
+algorithm <- "svmRadial"
+tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, power.to=-6, power.by=1, base=2), 
+                         .C = expGrid(power.from=4, power.to=10, power.by=2, base=2))
+trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)
+set.seed(3)
+model <- train(LogSDescsTrain, LogSTrain, algorithm, 
+               tuneGrid=tune.grid, 
+               trControl=trControl)
+
+
+# Train an error model
+error_model <- ErrorModel(PointPredictionModel=model,x.train=,LogSDescsTrain,
+                          savePredictions=TRUE,algorithm=algorithm,
+                          trControl=trControl, tune.grid=tune.grid)
+
+# Instantiate the class and get the confidence intervals
+example <- ConformalRegression$new()
+example$CalculateAlphas(model=model,error_model=error_model,ConformityMeasure=StandardMeasure)
+example$GetConfidenceIntervals(new.data=LogSDescsTest)
+example$CorrelationPlot(obs=LogSTest)
+example$plot
+
+
+
+\end{ExampleCode}
+\end{Examples}

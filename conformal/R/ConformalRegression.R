@@ -69,19 +69,19 @@ ConformalRegression <- setRefClass(
       pointPredictions <<- pred
       pred_error <- as.vector(predict(ErrorModel$finalModel, newdata = new.data)) 
       errorPredictions <<- pred_error
-      ### change formula
+      ### this formula can be tailored
       out <- ((alphas[length(alphas)*confidence]) * pred_error)
       intervals <<- out
 
     },
-    CorrelationPlot <- function(obs=NULL,pred=pointPredictions,intervals=intervals, margin = NULL, main = "", ylab = "Predicted", 
+    CorrelationPlott = function(obs=NULL,pred=pointPredictions,intervals=intervals, margin = NULL, main = "", ylab = "Predicted", 
                                xlab = "Observed", PointSize =3, ColMargin = "blue", ErrorBarCol= "red",
                                ErrorBarSize = 0.5, ErrorBarWidth = 0.5, ErrorBarPosition= "identity", 
                                ErrorBarStat = "identity",TextSize = 15, 
                                TitleSize = 18, XAxisSize = 18, YAxisSize = 18, TitleAxesSize = 18, ErrorBarAlpha=0.8,
-                               tmar = 1, bmar = 1, rmar = 1, lmar = 1, AngleLabX = 0, #LegendPosition = "right", 
+                               tmar = 1, bmar = 1, rmar = 1, lmar = 1, AngleLabX = 0, 
                                PointColor = "black", PointAlpha = 1, PointShape = 15, MarginWidth = 1)
-    {
+      {
      if(!(is.vector(obs)))
        stop("You must provide the observed values for the new data.")
      if (length(obs) != length(pred)) 
@@ -91,7 +91,8 @@ ConformalRegression <- setRefClass(
      if(is.null(margin))
        margin <- ( abs(max(obs,na.rm=T)) - abs(min(obs,na.rm=T)) ) / 4
      
-     print("This method generates a correlation plot for the observed against the predicted values for a set of datapoints, e.g. a test set.")
+    print("This method generates a correlation plot for the observed against the predicted values for a set of datapoints, e.g. a test set.")
+     
      
      Data <- data.frame(Observed = obs, Predicted = pred,Intervals=intervals)
      p <- ggplot(Data, aes(x = Observed, y = Predicted)) +
@@ -118,6 +119,7 @@ ConformalRegression <- setRefClass(
              plot.title = element_text(size = TitleSize), 
              legend.key = element_blank(),
              plot.margin = unit(c(tmar, rmar, bmar, lmar), "cm")) 
+     
      plot <<- p
     }
   )
