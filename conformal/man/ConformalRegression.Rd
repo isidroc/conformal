@@ -3,13 +3,13 @@
 
 \title{Conformal Prediction for Regression}
 \description{
-R class to create and visualize confidence intervals for individual 
+R reference class to create and visualize confidence intervals for individual 
 predictions according to 
 the conformal prediction framework.
 }
 
 \details{
-The class ConformalRegression contains the following fields:
+The reference class ConformalRegression contains the following fields:
 \itemize{
 \item  PointPredictionModel: stores a point prediction model.
 \item  ErrorModel: stores an error model. Error models can be trained with the function \code{\link{ErrorModel}}.

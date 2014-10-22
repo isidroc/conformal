@@ -7,6 +7,7 @@
 conformal permits the calculation of prediction errors in the conformal prediction framework:
 (i) p.values for classification, and
 (ii) confidence intervals for regression.
+The package are based on R reference classes (OOP).
 }
 
 \details{

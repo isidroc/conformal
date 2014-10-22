@@ -2,7 +2,7 @@
 \alias{ConformalClassification}
 \title{Conformal Prediction For Classification}
 \description{
-R class to p.values for individual 
+R reference class to calculate p.values for individual 
 predictions according to the conformal prediction framework.
 }
 \usage{
