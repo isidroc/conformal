@@ -5,15 +5,58 @@ library('conformal')
 
 base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
 cleanEx()
-nameEx("ConformalReg")
-### * ConformalReg
+nameEx("ConformalClassification")
+### * ConformalClassification
 
 flush(stderr()); flush(stdout())
 
-### Name: ConformalReg
+### Name: ConformalClassification
+### Title: Conformal Prediction For Classification
+### Aliases: ConformalClassification
+
+### ** Examples
+
+# Optional for parallel training
+#library(doMC)
+#registerDoMC(cores=4)
+
+data(LogS)
+
+# convert data to categorical
+LogSTrain[LogSTrain > -4] <- 1
+LogSTrain[LogSTrain <= -4] <- 2
+LogSTest[LogSTest > -4] <- 1
+LogSTest[LogSTest <= -4] <- 2
+
+LogSTrain <- factor(LogSTrain)
+LogSTest <- factor(LogSTest)
+
+algorithm <- "rf"
+
+trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)#,  predict.all=TRUE,keep.forest=TRUE,norm.votes=TRUE)
+set.seed(3)
+model <- train(LogSDescsTrain, LogSTrain, algorithm,type="classification", trControl=trControl,predict.all=TRUE,keep.forest=TRUE,norm.votes=TRUE)
+
+
+# Instantiate the class and get the p.values
+example <- ConformalClassification$new()
+example$CalculateCVAlphas(model=model)
+example$CalculatePValues(new.data=LogSDescsTest)
+example$p.values$P.values
+example$p.values$Significance_p.values
+
+
+
+
+cleanEx()
+nameEx("ConformalRegression")
+### * ConformalRegression
+
+flush(stderr()); flush(stdout())
+
+### Name: ConformalRegression
 ### Title: Conformal Prediction for Regression
-### Aliases: ConformalReg
-### Keywords: ~ConformalRegression
+### Aliases: ConformalRegression
 
 ### ** Examples
 
@@ -38,13 +81,13 @@ model <- train(LogSDescsTrain, LogSTrain, algorithm,
 
 
 # Train an error model
-ErrorModel <- error_model(PointPredictionModel=model,x.train=,LogSDescsTrain,
+error_model <- ErrorModel(PointPredictionModel=model,x.train=LogSDescsTrain,
                           savePredictions=TRUE,algorithm=algorithm,
                           trControl=trControl, tune.grid=tune.grid)
 
 # Instantiate the class and get the confidence intervals
-example <- ConformalReg$new()
-example$CalculateAlphas(model=model,error_model=ErrorModel,ConformityMeasure=StandardMeasure)
+example <- ConformalRegression$new()
+example$CalculateAlphas(model=model,error_model=error_model,ConformityMeasure=StandardMeasure)
 example$GetConfidenceIntervals(new.data=LogSDescsTest)
 example$CorrelationPlot(obs=LogSTest)
 example$plot
@@ -63,12 +106,27 @@ flush(stderr()); flush(stdout())
 ### Name: LogS
 ### Title: Small Molecule Solubility (LogS) Data
 ### Aliases: LogS
-### Keywords: datasets
 
 ### ** Examples
 
+# To use the data
 data(LogS)
-## maybe str(LogS) ; plot(LogS) ...
+
+
+
+cleanEx()
+nameEx("expGrid")
+### * expGrid
+
+flush(stderr()); flush(stdout())
+
+### Name: expGrid
+### Title: Exponential Grid Definition
+### Aliases: expGrid
+
+### ** Examples
+
+expGrid(power.from=-10,power.to=10,power.by=2,base=10)
 
 
 

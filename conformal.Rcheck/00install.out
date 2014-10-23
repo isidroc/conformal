@@ -5,9 +5,8 @@
 Warning: package 'caret' was built under R version 3.0.2
 Warning: package 'lattice' was built under R version 3.0.2
 ** help
-Warning: /Users/icortes/Desktop/conformal/conformal/man/LogS.Rd:16: unknown macro '\texttt'
-Warning: /Users/icortes/Desktop/conformal/conformal/man/LogS.Rd:17: unknown macro '\texttt'
-Warning: /Users/icortes/Desktop/conformal/conformal/man/LogS.Rd:17: unknown macro '\texttt'
+Warning: /Users/icortes/Desktop/conformal/conformal/man/ConformalRegression.Rd: Only one \seealso section is allowed: the first will be used
+Warning: /Users/icortes/Desktop/conformal/conformal/man/LogS.Rd:12: unknown macro '\circ'
 *** installing help indices
 ** building package indices
 ** testing if installed package can be loaded

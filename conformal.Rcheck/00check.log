@@ -14,7 +14,12 @@
 Found the following hidden files and directories:
   .DS_Store
   R/.DS_Store
+  man/.DS_Store
   man/.Rapp.history
+  man/.Rd2pdf2611
+  man/.Rd2pdf4446
+  man/.Rd2pdf4583
+  man/.Rd2pdf4653
 These were most likely included in error. See section 'Package
 structure' in the 'Writing R Extensions' manual.
 * checking for portable file names ... OK
@@ -23,9 +28,8 @@ structure' in the 'Writing R Extensions' manual.
 Found the following significant warnings:
   Warning: package 'caret' was built under R version 3.0.2
   Warning: package 'lattice' was built under R version 3.0.2
-  Warning: /Users/icortes/Desktop/conformal/conformal/man/LogS.Rd:16: unknown macro '\texttt'
-  Warning: /Users/icortes/Desktop/conformal/conformal/man/LogS.Rd:17: unknown macro '\texttt'
-  Warning: /Users/icortes/Desktop/conformal/conformal/man/LogS.Rd:17: unknown macro '\texttt'
+  Warning: /Users/icortes/Desktop/conformal/conformal/man/ConformalRegression.Rd: Only one \seealso section is allowed: the first will be used
+  Warning: /Users/icortes/Desktop/conformal/conformal/man/LogS.Rd:12: unknown macro '\circ'
   Warning: package 'caret' was built under R version 3.0.2
   Warning: package 'lattice' was built under R version 3.0.2
 See '/Users/icortes/Desktop/conformal/conformal.Rcheck/00install.out' for details.
@@ -35,7 +39,13 @@ See '/Users/icortes/Desktop/conformal/conformal.Rcheck/00install.out' for detail
 * checking top-level files ... OK
 * checking for left-over files ... OK
 * checking index information ... OK
-* checking package subdirectories ... OK
+* checking package subdirectories ... WARNING
+Found the following directories with names of Rd2pdf directories:
+  ./man/.Rd2pdf2611
+  ./man/.Rd2pdf4446
+  ./man/.Rd2pdf4583
+  ./man/.Rd2pdf4653
+Most likely, these were included erroneously.
 * checking R files for non-ASCII characters ... OK
 * checking R files for syntax errors ... OK
 * checking whether the package can be loaded ... OK
@@ -61,30 +71,44 @@ File 'conformal/R/onLoad.R':
 Package startup functions should not change the search path.
 See section 'Good practice' in '?.onAttach'.
 * checking Rd files ... WARNING
-Error : ConformalReg.Rd: non-ASCII input and no declared encoding
-
-prepare_Rd: LogS.Rd:16: unknown macro '\texttt'
-prepare_Rd: LogS.Rd:17: unknown macro '\texttt'
-prepare_Rd: LogS.Rd:5-7: Dropping empty section \description
-prepare_Rd: LogS.Rd:9-11: Dropping empty section \format
-prepare_Rd: LogS.Rd:20-21: Dropping empty section \source
-checkRd: (5) LogS.Rd:0-30: Must have a \description
-problem found in 'ConformalReg.Rd'
+prepare_Rd: ConformalClassification.Rd:11-13: Dropping empty section \arguments
+prepare_Rd: ConformalClassification.Rd:14-15: Dropping empty section \details
+prepare_Rd: ConformalClassification.Rd:16-18: Dropping empty section \value
+prepare_Rd: ConformalRegression.Rd: Only one \seealso section is allowed: the first will be used
+prepare_Rd: LogS.Rd:12: unknown macro '\circ'
+prepare_Rd: LogS.Rd:5-6: Dropping empty section \description
+prepare_Rd: LogS.Rd:8-10: Dropping empty section \format
+prepare_Rd: LogS.Rd:36-37: Dropping empty section \source
+checkRd: (5) LogS.Rd:0-47: Must have a \description
 * checking Rd metadata ... OK
 * checking Rd cross-references ... OK
 * checking for missing documentation entries ... WARNING
-Undocumented code objects:
-  'GetCVPreds' 'StandardMeasure' 'error_model' 'expGrid'
 Undocumented data sets:
   'LogSDescsTest' 'LogSDescsTrain' 'LogSTest' 'LogSTrain'
 Undocumented S4 classes:
-  'ConformalReg'
+  'ConformalClassification' 'ConformalRegression'
 All user-level objects in a package (including S4 classes and methods)
 should have documentation entries.
 See the chapter 'Writing R documentation files' in the 'Writing R
 Extensions' manual.
-* checking for code/documentation mismatches ... OK
-* checking Rd \usage sections ... OK
+* checking for code/documentation mismatches ... WARNING
+Codoc mismatches from documentation object 'ErrorModel':
+ErrorModel
+  Code: function(PointPredictionModel, x.train, algorithm = "svm", ...)
+  Docs: function(PointPredictionModel, x.train, algorithm =
+                 "svmRadial", ...)
+  Mismatches in argument default values:
+    Name: 'algorithm' Code: "svm" Docs: "svmRadial"
+
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'ConformalClassification'
+  '...'
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See the chapter 'Writing R documentation files' in the 'Writing R
+Extensions' manual.
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
 * checking contents of 'data' directory ... OK
@@ -95,10 +119,53 @@ Extensions' manual.
         by using R CMD build --resave-data
              old_size new_size compress
   LogS.RData   1003Kb    869Kb       xz
-* checking examples ... OK
-* checking PDF version of manual ... OK
-WARNING: There were 5 warnings.
-NOTE: There were 2 notes.
-See
-  '/Users/icortes/Desktop/conformal/conformal.Rcheck/00check.log'
-for details.
+* checking examples ... ERROR
+Running examples in 'conformal-Ex.R' failed
+The error most likely occurred in:
+
+> ### Name: ConformalRegression
+> ### Title: Conformal Prediction for Regression
+> ### Aliases: ConformalRegression
+> 
+> ### ** Examples
+> 
+> #############################################
+> ### Example
+> #############################################
+> 
+> # Optional for parallel training
+> #library(doMC)
+> #registerDoMC(cores=4)
+> 
+> data(LogS)
+> 
+> algorithm <- "svmRadial"
+> tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, power.to=-6, power.by=1, base=2), 
++                          .C = expGrid(power.from=4, power.to=10, power.by=2, base=2))
+> trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)
+> set.seed(3)
+> model <- train(LogSDescsTrain, LogSTrain, algorithm, 
++                tuneGrid=tune.grid, 
++                trControl=trControl)
+Loading required package: kernlab
+Warning: package 'kernlab' was built under R version 3.0.2
+> 
+> 
+> # Train an error model
+> error_model <- ErrorModel(PointPredictionModel=model,x.train=LogSDescsTrain,
++                           savePredictions=TRUE,algorithm=algorithm,
++                           trControl=trControl, tune.grid=tune.grid)
+> 
+> # Instantiate the class and get the confidence intervals
+> example <- ConformalRegression$new()
+Conformal Prediction Class for Regression Instantiated
+> example$CalculateAlphas(model=model,error_model=error_model,ConformityMeasure=StandardMeasure)
+[1] "Calculating alphas.."
+
+> example$GetConfidenceIntervals(new.data=LogSDescsTest)
+[1] "Predicting (i) the value, and (ii) the error for the new data.."
+
+> example$CorrelationPlot(obs=LogSTest)
+Error in is.na(intervals) : 'intervals' is missing
+Calls: <Anonymous>
+Execution halted

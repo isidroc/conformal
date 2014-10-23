@@ -47,11 +47,9 @@ LogSTest <- factor(LogSTest)
 
 algorithm <- "rf"
 
-trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE, 
-                          predict.all=TRUE,keep.forest=TRUE,norm.votes=TRUE)
+trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)#,  predict.all=TRUE,keep.forest=TRUE,norm.votes=TRUE)
 set.seed(3)
-model <- train(LogSDescsTrain, LogSTrain, algorithm,type="classification", 
-               trControl=trControl)
+model <- train(LogSDescsTrain, LogSTrain, algorithm,type="classification", trControl=trControl,predict.all=TRUE,keep.forest=TRUE,norm.votes=TRUE)
 
 
 # Instantiate the class and get the p.values

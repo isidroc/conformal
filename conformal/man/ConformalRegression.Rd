@@ -41,8 +41,6 @@ Confidence intervals are defined as: point predictions (stored in the field poin
 The plot is stored in the field plot.
 }
 }
-\value{
-}
 
 \references{
 Norinder et al. J. Chem. Inf. Model., 2014, 54 (6), pp 1596-1603
@@ -50,11 +48,11 @@ DOI: 10.1021/ci5001168
 \url{http://pubs.acs.org/doi/abs/10.1021/ci5001168}
 }
 
-\seealso{\code{\link{conformal}}}
 \author{
 Isidro Cortes-Ciriano <isidrolauscher@gmail.com>
 }
 
+\seealso{\code{\link{conformal}}}
 
 
 
@@ -83,7 +81,7 @@ model <- train(LogSDescsTrain, LogSTrain, algorithm,
 
 
 # Train an error model
-error_model <- ErrorModel(PointPredictionModel=model,x.train=,LogSDescsTrain,
+error_model <- ErrorModel(PointPredictionModel=model,x.train=LogSDescsTrain,
                           savePredictions=TRUE,algorithm=algorithm,
                           trControl=trControl, tune.grid=tune.grid)
 

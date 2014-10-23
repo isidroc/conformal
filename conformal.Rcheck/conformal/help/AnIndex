@@ -1,2 +1,9 @@
-ConformalReg	ConformalReg
+conformal-package	conformal
+conformal	conformal
+ConformalClassification	ConformalClassification
+ConformalRegression	ConformalRegression
+ErrorModel	ErrorModel
+expGrid	expGrid
+GetCVPreds	GetCVPreds
 LogS	LogS
+StandardMeasure	StandardMeasure
