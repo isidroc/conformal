@@ -16,7 +16,7 @@ ConformalRegression <- setRefClass(
     alphas="numeric",
     errorPredictions = "numeric",
     pointPredictions = "numeric",
-    intervals = "numeric",
+    Intervals = "numeric",
     plot = "ANY"
   ),
   methods = list(
@@ -71,10 +71,10 @@ ConformalRegression <- setRefClass(
       errorPredictions <<- pred_error
       ### this formula can be tailored
       out <- ((alphas[length(alphas)*confidence]) * pred_error)
-      intervals <<- out
+      Intervals <<- out
 
     },
-    CorrelationPlot = function(obs=NULL,pred=pointPredictions,intervals=intervals,margin = NULL, main = "", ylab = "Predicted", 
+    CorrelationPlot = function(obs=NULL,pred=pointPredictions,intervals=Intervals,margin = NULL, main = "", ylab = "Predicted", 
                                xlab = "Observed", PointSize =3, ColMargin = "blue", ErrorBarCol= "red",
                                ErrorBarSize = 0.5, ErrorBarWidth = 0.5, ErrorBarPosition= "identity", 
                                ErrorBarStat = "identity",TextSize = 15, 
