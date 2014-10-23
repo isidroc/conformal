@@ -16,7 +16,7 @@ is foremost in machine learning to determine the applicability domain of a predi
 The applicability domain is usually defined as the amount (and thus regions) of descriptor space to which a model can be reliably applied.
 Conformal prediction is an algorithm-independent technique, i.e. it works with any predictive method such as SVM, PLS, etc..,
 which outputs confidence regions for individual predictions in the case of regression,
-and p.values for the categories in classification.
+and p.values for the categories in classification [1,2].
 \cr
 
 \bold{Regression}
@@ -26,9 +26,9 @@ For instance, it we choose a confidence level of 80\%
 the true value for new datapoints will lie outside the predicted confidence intervals 
 in at most 20\% of the cases.
 
-In the conformal prediction framework, the datapoints in the training set are used to define how unlikely a new datapoint is with respect to the data presented to the model in the training phase. 
+In the conformal prediction framework [1,2], the datapoints in the training set are used to define how unlikely a new datapoint is with respect to the data presented to the model in the training phase. 
 The conformity for a given datapoint, \eqn{x_i}, with respect to the training set is quantified with a nonconformity score, \eqn{\alpha},
-calculated with a nonconformity measure (e.g. \code{\link{StandardMeasure}}),
+calculated with a nonconformity measure (e.g. \code{\link{StandardMeasure}}) [2],
 which here we define as:
 
 \eqn{$\alpha_{i} = \frac {|y_{i}-\widetilde{y}_{i}|}  {\widetilde{\rho}_{i}}$}
@@ -76,25 +76,73 @@ Individual confidence intervals for each datapoint in the external set are calcu
 
 \bold{Classification}
 
-In the case of classification, the predictions of the trees in a Random Forest model
-serve to calculate class probabilities (p.values).
-Firstly, a Random Forest classifier is trained on a dataset using cross-validation.
-For each datapoint, the percentage of trees in the forest 
-that predict a given class is calculated.
-This process generates as many vectors of percentages as categories,
-which are then sorted in increasing order. 
+
+Initially, a Random Forest classifier is trained on the dataset using k-fold cross-validation.
+The cross-validation predictions serve to calculate the
+nonconformity scores for the training set.
+\cr
+
+In the case of classification, 
+the nonconformity scores corresponds to the percentage of trees in the forest
+classifying a given datapoint in the training set (label-wise Mondrian off-line inductive conformal prediction -MICP-) [3].
+For instamce, in a binary classification example, 
+if 87 trees from a Random Forest model comprising 100 trees
+classify a datapoint as belonging to class A, 
+the nonconformity score for this class would be 0.87 (87\%),
+whereas its value for class B would be 0.13.
+Here, we have implemented the pipeline proposed by Norinder et al. 2014 [2] using Ranfom Forest models.
+Nevertheless, other ensemble methods could be used to calculate the nonconformity scores.
+This process generates a
+matrix (nonconformity scores matrix -NCSM-) which rows corresponds to the datapoints in the training set,
+and its columns to the number of distinct classes (two in the binary classification example):
+
+NCSM = 
+
+\figure{classificationScheme.pdf}{options: width=14cm}
+
+Next, each column of the matrix is sorted in increasing order. 
+These columns are called Mondrian class lists.
+As in regression, a confidence level, \eqn{\epsilon}, needs to be specified.
+We define significance as \eqn{1-\epsilon}.
+\cr
+
+The model trained on the whole dataset is used to classify 
+the datapoints comprised in an external dataset.
+Let's consider one datapoint in the external set, namely \eqn{x_{ext i}}.
+The probability of trees in the Random Forest predicting each of the classes for that datapoint is then calculated.
+In the binary case, this can be defined as: 
+\eqn{ \{p(A); p(B)\}}.
+
+Then, the number of 
+
+These values are related to the Mondrian class lists.
+to determine 
+ToThe Mondrian class lists in the nonconformity scores matrix serve as a lookup table.
+
+
+obtain the probability of the prediction from the RF target model for each class (in our example the percentage of the trees that give the correct class). For each class assess where this probability is located in the list of predicted probabilities for the corresponding class, e.g. if the probability list for class A has the following sorted list of predicted probabilities from the calibration set: 0.002, 0.15, 0.23, 0.4, 0.48, 0.7, 0.75, 0.8, 0.95, 0.98 the probability for the new
+compound is predicted to be 0.88, then it will be between 0.8 and 0.95 in the list thus giving a p-value of 0.82 (9/11). A similar lookup is then performed in the sorted probability list of class B where, in this binary classification case, the probability is 0.12 to determine the p-value for that class. I
+
+
+
+
 
 }
 \references{
-Isidro Cortes <isidrolauscher@gmail.com>.
-conformal: an R package to calculate prediction errors in the conformal prediction framework.
-
-Shafer et al. JMLR, 2008, 9, pp 371-421.
+[1] Shafer et al. JMLR, 2008, 9, pp 371-421.
 \url{http://machinelearning.wustl.edu/mlpapers/paper_files/shafer08a.pdf}
 
-Norinder et al. J. Chem. Inf. Model., 2014, 54 (6), pp 1596-1603.
+[2] Norinder et al. J. Chem. Inf. Model., 2014, 54 (6), pp 1596-1603.
 DOI: 10.1021/ci5001168
 \url{http://pubs.acs.org/doi/abs/10.1021/ci5001168}
 
+[3] Dmitry Devetyarov and Ilia Nouretdinov,
+Artificial Intelligence Applications and Innovations, 2010, 339, pp 37-44.
+DOI: 10.1007/978-3-642-16239-8_8
+\url{http://link.springer.com/chapter/10.1007\%2F978-3-642-16239-8_8#}
 }
 
+\author{
+Isidro Cortes <isidrolauscher@gmail.com>.
+conformal: an R package to calculate prediction errors in the conformal prediction framework.
+}
