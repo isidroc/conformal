@@ -33,16 +33,22 @@ LogSTest <- factor(LogSTest)
 
 algorithm <- "rf"
 
-trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)#,  predict.all=TRUE,keep.forest=TRUE,norm.votes=TRUE)
+trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)
 set.seed(3)
-model <- train(LogSDescsTrain, LogSTrain, algorithm,type="classification", trControl=trControl,predict.all=TRUE,keep.forest=TRUE,norm.votes=TRUE)
+model <- train(LogSDescsTrain, LogSTrain, 
+         algorithm,type="classification", 
+         trControl=trControl,predict.all=TRUE,
+         keep.forest=TRUE,norm.votes=TRUE,
+         ntree=500)
 
 
 # Instantiate the class and get the p.values
 example <- ConformalClassification$new()
-example$CalculateCVAlphas(model=model)
+example$CalculateCVScores(model=model)
 example$CalculatePValues(new.data=LogSDescsTest)
+# we get the p.values:
 example$p.values$P.values
+# we get the significance of these p.values.
 example$p.values$Significance_p.values
 
 

@@ -29,7 +29,7 @@ These intervals are calculated when calling the method GetConfidenceIntervals.
 
 The class ConformalRegression contains the following methods:
 \itemize{
-\item  initialize: this method is called when you create an instance of the class. The confidence level (field confidence) needs to be defined.
+\item  initialize: this method is called when you create an instance of the class. The default value for the confidence level is 0.8.
 \item   CalculateAlphas: this method calculates the vector of nonconformity scores for the datapoints in the traning set. These scores (or alphas) are stored in the field alphas. This method requires a point prediction model (argument model),
 an error model (argument error_model), and a nonconformity measure (argument ConformityMeasure), such as \code{\link{StandardMeasure}}.
 \item  GetConfidenceIntervals: this methods calculates confidence intervals for individual predictions in the conformal prediction framework. The methods requires an external set for which the confidence intervals will be calculated.

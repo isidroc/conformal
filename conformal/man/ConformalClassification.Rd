@@ -5,16 +5,37 @@
 R reference class to calculate p.values for individual 
 predictions according to the conformal prediction framework.
 }
-\usage{
-ConformalClassification(...)
-}
-\arguments{
-
-}
 \details{
+The reference class ConformalClassification contains the following fields:
+\itemize{
+\item ClassificationModel: stores a classification Random Forest model.
+\item confidence: stores the user-defined confidence level.
+\item data.new: stores the descriptors corresponding to an external set.
+\item NonconformityScoresMatrix: stores the non conformity scores matrix.
+\item ClassPredictions: stores the class predictions calculated for the external set.
+\item p.values: a list storing
+     \itemize{
+		\item P.values: a data.frame containing the p.values calculated for the external set. 
+		Rows are indexed by datapoints, whereas columns are indexed by classes.
+		The names of the rows correspond to the names of the rows in the external set.
+		 \item Significance_p.values: a data.frame reporting the significance of the p.values (where 1 means significant, and 0 not significant),
+		 according to the user-defined confidence level, \eqn{\epsilon} (the default value is 0.8).
+		Rows are indexed by datapoints, whereas columns are indexed by classes.
+		The names of the rows correspond to the names of the rows in the external set.
+	 }
 }
-\value{
 
+The class ConformalClassification contains the following methods:
+\itemize{
+\item initialize: this method is called when you create an instance of the class. The default value for the confidence level is 0.8.
+\item CalculateCVScores: this method calculates the non conformitity scores (or probabilities) matrix from the cross-validation predictions of the input randomForest model (trained with k-fold cross-validation).
+The non conformity scores matrix is stored in the field NonconformityScoresMatrix.
+\item CalculatePValues: this method calculates the p.values for the datapoints in a external set.
+The class predictions are stored in the field ClassPredictions,
+whereas the p.values and their significance,
+according to the user defined confidence level,
+are stored in the field p.values.
+}
 }
 \references{
 Norinder et al. J. Chem. Inf. Model., 2014, 54 (6), pp 1596-1603
@@ -47,16 +68,22 @@ LogSTest <- factor(LogSTest)
 
 algorithm <- "rf"
 
-trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)#,  predict.all=TRUE,keep.forest=TRUE,norm.votes=TRUE)
+trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)
 set.seed(3)
-model <- train(LogSDescsTrain, LogSTrain, algorithm,type="classification", trControl=trControl,predict.all=TRUE,keep.forest=TRUE,norm.votes=TRUE)
+model <- train(LogSDescsTrain, LogSTrain, 
+         algorithm,type="classification", 
+         trControl=trControl,predict.all=TRUE,
+         keep.forest=TRUE,norm.votes=TRUE,
+         ntree=500)
 
 
 # Instantiate the class and get the p.values
 example <- ConformalClassification$new()
-example$CalculateCVAlphas(model=model)
+example$CalculateCVScores(model=model)
 example$CalculatePValues(new.data=LogSDescsTest)
+# we get the p.values:
 example$p.values$P.values
+# we get the significance of these p.values.
 example$p.values$Significance_p.values
 
 }

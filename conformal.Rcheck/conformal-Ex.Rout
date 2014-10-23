@@ -27,6 +27,9 @@ Loading required package: lattice
 Warning: package 'lattice' was built under R version 3.0.2
 Loading required package: ggplot2
 Loading required package: grid
+Loading required package: randomForest
+randomForest 4.6-7
+Type rfNews() to see new features/changes/bug fixes.
 Conformal prediction in R. Isidro Cortes-Ciriano <isidrolauscher@gmail.com>
 > 
 > base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
@@ -59,24 +62,26 @@ Conformal prediction in R. Isidro Cortes-Ciriano <isidrolauscher@gmail.com>
 > 
 > algorithm <- "rf"
 > 
-> trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)#,  predict.all=TRUE,keep.forest=TRUE,norm.votes=TRUE)
+> trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)
 > set.seed(3)
-> model <- train(LogSDescsTrain, LogSTrain, algorithm,type="classification", trControl=trControl,predict.all=TRUE,keep.forest=TRUE,norm.votes=TRUE)
-Loading required package: randomForest
-randomForest 4.6-7
-Type rfNews() to see new features/changes/bug fixes.
+> model <- train(LogSDescsTrain, LogSTrain, 
++          algorithm,type="classification", 
++          trControl=trControl,predict.all=TRUE,
++          keep.forest=TRUE,norm.votes=TRUE,
++          ntree=500)
 Warning: package 'e1071' was built under R version 3.0.2
 > 
 > 
 > # Instantiate the class and get the p.values
 > example <- ConformalClassification$new()
 Conformal Prediction Class for Classification Instantiated
-> example$CalculateCVAlphas(model=model)
+> example$CalculateCVScores(model=model)
 [1] "Calculating the vector of nonconformity measures for the CV predictions (label wise Mondrian ICP).."
 
 > example$CalculatePValues(new.data=LogSDescsTest)
 [1] "Classifying the input data.."
 
+> # we get the p.values:
 > example$p.values$P.values
                  1         2
 427.1   0.43501946 0.5649805
@@ -400,6 +405,7 @@ Conformal Prediction Class for Classification Instantiated
 1249.1  0.60700389 0.3929961
 805.1   0.03735409 0.9626459
 855.1   0.47315175 0.5268482
+> # we get the significance of these p.values.
 > example$p.values$Significance_p.values
         1 2
 427.1   1 1
@@ -729,7 +735,7 @@ Conformal Prediction Class for Classification Instantiated
 > 
 > cleanEx()
 
-detaching 'package:e1071', 'package:randomForest'
+detaching 'package:e1071'
 
 > nameEx("ConformalRegression")
 > ### * ConformalRegression
@@ -779,6 +785,62 @@ Conformal Prediction Class for Regression Instantiated
 [1] "Predicting (i) the value, and (ii) the error for the new data.."
 
 > example$CorrelationPlot(obs=LogSTest)
-Error in is.na(intervals) : 'intervals' is missing
-Calls: <Anonymous>
-Execution halted
+[1] "This method generates a correlation plot for the observed against the predicted values for a set of datapoints, e.g. a test set."
+> example$plot
+> 
+> 
+> 
+> 
+> 
+> 
+> cleanEx()
+
+detaching 'package:kernlab'
+
+> nameEx("LogS")
+> ### * LogS
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: LogS
+> ### Title: Small Molecule Solubility (LogS) Data
+> ### Aliases: LogS
+> 
+> ### ** Examples
+> 
+> # To use the data
+> data(LogS)
+> 
+> 
+> 
+> cleanEx()
+> nameEx("expGrid")
+> ### * expGrid
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: expGrid
+> ### Title: Exponential Grid Definition
+> ### Aliases: expGrid
+> 
+> ### ** Examples
+> 
+> expGrid(power.from=-10,power.to=10,power.by=2,base=10)
+ [1] 1e-10 1e-08 1e-06 1e-04 1e-02 1e+00 1e+02 1e+04 1e+06 1e+08 1e+10
+> 
+> 
+> 
+> ### * <FOOTER>
+> ###
+> options(digits = 7L)
+> base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  230.953 4.693 235.719 0 0 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')

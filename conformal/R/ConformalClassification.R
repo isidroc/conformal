@@ -12,10 +12,9 @@ ConformalClassification <- setRefClass(
     ClassificationModel = "ANY",
     confidence = "numeric",
     data.new = "ANY",
-    MondrianICPCV ="ANY",
+    NonconformityScoresMatrix ="ANY",
     ClassPredictions = "ANY",
-    p.values = "ANY",
-    plot = "ANY"
+    p.values = "ANY"
   ),
   methods = list(
     initialize = function(confi = 0.8)
@@ -27,7 +26,7 @@ ConformalClassification <- setRefClass(
       cat("Conformal Prediction Class for Classification Instantiated")
       cat("\n")
     },
-    CalculateCVAlphas = function(model=NULL)
+    CalculateCVScores = function(model=NULL)
     {
       if(is.null(model))
         stop("To calculate the alphas, a point prediction model and an error model 
@@ -39,7 +38,7 @@ ConformalClassification <- setRefClass(
       cat('\n')
       MondrianICP <- model$finalModel$votes
       MondrianICP <- apply(MondrianICP, 2, sort, decreasing=FALSE)
-      MondrianICPCV <<- MondrianICP
+      NonconformityScoresMatrix <<- MondrianICP
     },
     CalculatePValues = function(new.data=NULL)
     {
@@ -58,18 +57,18 @@ ConformalClassification <- setRefClass(
       ntrees <- model$finalModel$ntree
       votes <- apply(pred$individual,1,function(x){table(x)})
       out<-c()
-      for (i in colnames(MondrianICPCV)){
+      for (i in colnames(NonconformityScoresMatrix)){
         out<-cbind(out,sapply(votes,function(x) x[i]))
       }
       out[is.na(out)] <- 0
       out <- out/ntrees
-      colnames(out) <- colnames(MondrianICPCV)
+      colnames(out) <- colnames(NonconformityScoresMatrix)
       
-      pval <- t(apply(out,1,function(x){ apply(do.call(rbind, lapply(as.data.frame(t(MondrianICPCV)), "<", x)),2,sum)    }))
-      pval <- pval / nrow(MondrianICPCV)
+      pval <- t(apply(out,1,function(x){ apply(do.call(rbind, lapply(as.data.frame(t(NonconformityScoresMatrix)), "<", x)),2,sum)    }))
+      pval <- pval / nrow(NonconformityScoresMatrix)
       # this also works but is slower
       # library(plyr)
-      # now <- t(apply(out,1,function(x){ apply(aaply(MondrianICPCV, 1, "<", x),2,sum)    }))
+      # now <- t(apply(out,1,function(x){ apply(aaply(NonconformityScoresMatrix, 1, "<", x),2,sum)    }))
       # http://stackoverflow.com/questions/20596433/how-to-divide-each-row-of-a-matrix-by-elements-of-a-vector-in-r
       pval_signif <- (pval > (1-confidence))*1
       p.values <<- list(P.values = pval,Significance_p.values = pval_signif)

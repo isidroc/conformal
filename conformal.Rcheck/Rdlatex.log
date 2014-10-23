@@ -4,8 +4,8 @@ This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012)
  restricted \write18 enabled.
 entering extended mode
 
-(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/Rtmp4wSpgT/Rd2pdf1a80
-f858b1/Rd2.tex
+(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpFSYNeg/Rd2pdf9b20
+29ea7458/Rd2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -70,6 +70,10 @@ Package hyperref Warning: Option `pagebackref' has already been used,
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omsenc.dfu)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1enc.dfu))
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/latin1.def))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg)))
 Writing index file Rd2.idx
 No file Rd2.aux.
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1cmr.fd)
@@ -78,20 +82,62 @@ No file Rd2.aux.
 [Loading MPS to PDF converter (version 2006.09.02).]
 ) (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
 (/usr/local/texlive/2012/texmf-dist/tex/latex/inconsolata/t1fi4.fd)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/t1phv.fd)
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [1{/usr/local/texl
-ive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (14.28088pt too wide) in paragraph at lines 69--69
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
+Underfull \hbox (badness 10000) in paragraph at lines 42--49
+
+[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Command \j invalid in math mode on input line 102.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 102.
+
+[2]
+</Users/icortes/Desktop/conformal/conformal.Rcheck/conformal/help/figures/class
+ificationScheme.pdf, id=34, 441.65pt x 200.75pt>
+<use /Users/icortes/Desktop/conformal/conformal.Rcheck/conformal/help/figures/c
+lassificationScheme.pdf>
+Overfull \hbox (3.11946pt too wide) in paragraph at lines 132--133
+[][]
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--139
+
+
+Overfull \hbox (38.85063pt too wide) detected at line 154
+\OML/cmm/m/it/10 p:value\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ; 
+\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = [];   \OML/cmm/m/it/10 p:value\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 B\OT1/cmr/m/n/10 )
+ = []
+[3 </Users/icortes/Desktop/conformal/conformal.Rcheck/conformal/help/figures/cl
+assificationScheme.pdf>]
+Overfull \hbox (2.40045pt too wide) in paragraph at lines 186--190
+\T1/ptm/m/n/10 2010, 339, pp 37-44. DOI: 10.1007/978-3-642-16239-8_8 [][]$\T1/f
+i4/m/n/10 http : / / link . springer . com / chapter /
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ts1ptm.fd) [4] [5]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [6]
+Overfull \hbox (14.28088pt too wide) in paragraph at lines 370--370
  []\T1/fi4/m/n/9 tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, powe
 r.to=-6, power.by=1, base=2),[] 
-
-Overfull \hbox (23.28088pt too wide) in paragraph at lines 85--85
- []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=ErrorModel,Con
-formityMeasure=StandardMeasure)[] 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [2]
+[7]
+Overfull \hbox (27.78088pt too wide) in paragraph at lines 386--386
+ []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=error_model,Co
+nformityMeasure=StandardMeasure)[] 
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [8]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
+Overfull \hbox (9.91612pt too wide) in paragraph at lines 504--507
+[]\T1/ptm/m/n/10 This func-tion ex-tracts the cross-validation pre-dic-tions fr
+om a caret model trained with cross-validation.
+[9] (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [10]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [11]
 No file Rd2.ind.
-[3] (./Rd2.aux)
+[12] (./Rd2.aux)
 
 Package rerunfilecheck Warning: File `Rd2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -102,24 +148,31 @@ Package rerunfilecheck Warning: File `Rd2.out' has changed.
 xmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2012/texmf-dist/fonts/
 enc/dvips/inconsolata/fi4-ec.enc}</usr/local/texlive/2012/texmf-dist/fonts/type
 1/public/inconsolata/Inconsolata.pfb></usr/local/texlive/2012/texmf-dist/fonts/
-type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/u
-rw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/u
-tmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (3 pages, 61731 bytes).
+type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/he
+lvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utm
+b8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/
+texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (12 pages, 187359 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2012] (kpathsea + Thai support).
-Scanning input file ./Rd2.idx....done (4 entries accepted, 0 rejected).
-Sorting entries....done (10 comparisons).
-Generating output file ./Rd2.ind....done (16 lines written, 0 warnings).
+Scanning input file ./Rd2.idx....done (19 entries accepted, 0 rejected).
+Sorting entries....done (84 comparisons).
+Generating output file ./Rd2.ind....done (34 lines written, 1 warning).
 Output written in ./Rd2.ind.
 Transcript written in ./Rd2.ilg.
 This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012)
  restricted \write18 enabled.
 entering extended mode
 
-(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/Rtmp4wSpgT/Rd2pdf1a80
-f858b1/Rd2.tex
+(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpFSYNeg/Rd2pdf9b20
+29ea7458/Rd2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -184,6 +237,10 @@ Package hyperref Warning: Option `pagebackref' has already been used,
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omsenc.dfu)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1enc.dfu))
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/latin1.def))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg)))
 Writing index file Rd2.idx
 (./Rd2.aux) (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1cmr.fd)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/t1ptm.fd)
@@ -192,48 +249,105 @@ Writing index file Rd2.idx
 ) (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
 (./Rd2.out) (./Rd2.out)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
 (/usr/local/texlive/2012/texmf-dist/tex/latex/inconsolata/t1fi4.fd)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/t1phv.fd) (./Rd2.toc)
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [1{/usr/local/texl
-ive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (14.28088pt too wide) in paragraph at lines 69--69
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
+Underfull \hbox (badness 10000) in paragraph at lines 42--49
+
+[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2]
+
+LaTeX Warning: Command \j invalid in math mode on input line 102.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 102.
+
+
+</Users/icortes/Desktop/conformal/conformal.Rcheck/conformal/help/figures/class
+ificationScheme.pdf, id=79, 441.65pt x 200.75pt>
+<use /Users/icortes/Desktop/conformal/conformal.Rcheck/conformal/help/figures/c
+lassificationScheme.pdf>
+Overfull \hbox (3.11946pt too wide) in paragraph at lines 132--133
+[][]
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--139
+
+[3 </Users/icortes/Desktop/conformal/conformal.Rcheck/conformal/help/figures/cl
+assificationScheme.pdf>]
+Overfull \hbox (38.85063pt too wide) detected at line 154
+\OML/cmm/m/it/10 p:value\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ; 
+\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = [];   \OML/cmm/m/it/10 p:value\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 B\OT1/cmr/m/n/10 )
+ = []
+
+Overfull \hbox (2.40045pt too wide) in paragraph at lines 186--190
+\T1/ptm/m/n/10 2010, 339, pp 37-44. DOI: 10.1007/978-3-642-16239-8_8 [][]$\T1/f
+i4/m/n/10 http : / / link . springer . com / chapter /
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [4]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ts1ptm.fd) [5]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [6] [7]
+Overfull \hbox (14.28088pt too wide) in paragraph at lines 370--370
  []\T1/fi4/m/n/9 tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, powe
 r.to=-6, power.by=1, base=2),[] 
 
-Overfull \hbox (23.28088pt too wide) in paragraph at lines 85--85
- []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=ErrorModel,Con
-formityMeasure=StandardMeasure)[] 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [2] (./Rd2.ind
-[3] [4]) (./Rd2.aux)
+Overfull \hbox (27.78088pt too wide) in paragraph at lines 386--386
+ []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=error_model,Co
+nformityMeasure=StandardMeasure)[] 
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [8]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [9]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
+Overfull \hbox (9.91612pt too wide) in paragraph at lines 504--507
+[]\T1/ptm/m/n/10 This func-tion ex-tracts the cross-validation pre-dic-tions fr
+om a caret model trained with cross-validation.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [10]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [11] (./Rd2.ind
+[12]
+
+LaTeX Font Warning: Font shape `T1/fi4/m/it' undefined
+(Font)              using `T1/fi4/m/n' instead on input line 6.
+
+[13]) (./Rd2.aux)
 
 Package rerunfilecheck Warning: File `Rd2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  )
 (see the transcript file for additional information){/usr/local/texlive/2012/te
 xmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2012/texmf-dist/fonts/
 enc/dvips/inconsolata/fi4-ec.enc}</usr/local/texlive/2012/texmf-dist/fonts/type
 1/public/inconsolata/Inconsolata.pfb></usr/local/texlive/2012/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/ur
-w/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/ut
-mr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
-/usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (4 pages, 70226 bytes).
+type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/he
+lvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utm
+b8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/
+texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (13 pages, 190089 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2012] (kpathsea + Thai support).
-Scanning input file ./Rd2.idx....done (4 entries accepted, 0 rejected).
-Sorting entries....done (10 comparisons).
-Generating output file ./Rd2.ind....done (16 lines written, 0 warnings).
+Scanning input file ./Rd2.idx....done (19 entries accepted, 0 rejected).
+Sorting entries....done (84 comparisons).
+Generating output file ./Rd2.ind....done (34 lines written, 1 warning).
 Output written in ./Rd2.ind.
 Transcript written in ./Rd2.ilg.
 This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012)
  restricted \write18 enabled.
 entering extended mode
 
-(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/Rtmp4wSpgT/Rd2pdf1a80
-f858b1/Rd2.tex
+(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpFSYNeg/Rd2pdf9b20
+29ea7458/Rd2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -298,6 +412,10 @@ Package hyperref Warning: Option `pagebackref' has already been used,
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omsenc.dfu)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1enc.dfu))
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/latin1.def))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg)))
 Writing index file Rd2.idx
 (./Rd2.aux) (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ts1cmr.fd)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/t1ptm.fd)
@@ -306,30 +424,88 @@ Writing index file Rd2.idx
 ) (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty))
 (./Rd2.out) (./Rd2.out)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
 (/usr/local/texlive/2012/texmf-dist/tex/latex/inconsolata/t1fi4.fd)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/t1phv.fd) (./Rd2.toc)
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [1{/usr/local/texl
-ive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (14.28088pt too wide) in paragraph at lines 69--69
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
+Underfull \hbox (badness 10000) in paragraph at lines 42--49
+
+[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2]
+
+LaTeX Warning: Command \j invalid in math mode on input line 102.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 102.
+
+
+</Users/icortes/Desktop/conformal/conformal.Rcheck/conformal/help/figures/class
+ificationScheme.pdf, id=85, 441.65pt x 200.75pt>
+<use /Users/icortes/Desktop/conformal/conformal.Rcheck/conformal/help/figures/c
+lassificationScheme.pdf>
+Overfull \hbox (3.11946pt too wide) in paragraph at lines 132--133
+[][]
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--139
+
+[3 </Users/icortes/Desktop/conformal/conformal.Rcheck/conformal/help/figures/cl
+assificationScheme.pdf>]
+Overfull \hbox (38.85063pt too wide) detected at line 154
+\OML/cmm/m/it/10 p:value\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ; 
+\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = [];   \OML/cmm/m/it/10 p:value\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 B\OT1/cmr/m/n/10 )
+ = []
+
+Overfull \hbox (2.40045pt too wide) in paragraph at lines 186--190
+\T1/ptm/m/n/10 2010, 339, pp 37-44. DOI: 10.1007/978-3-642-16239-8_8 [][]$\T1/f
+i4/m/n/10 http : / / link . springer . com / chapter /
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [4]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ts1ptm.fd) [5]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [6] [7]
+Overfull \hbox (14.28088pt too wide) in paragraph at lines 370--370
  []\T1/fi4/m/n/9 tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, powe
 r.to=-6, power.by=1, base=2),[] 
 
-Overfull \hbox (23.28088pt too wide) in paragraph at lines 85--85
- []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=ErrorModel,Con
-formityMeasure=StandardMeasure)[] 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [2] (./Rd2.ind
-[3] [4]) (./Rd2.aux) )
+Overfull \hbox (27.78088pt too wide) in paragraph at lines 386--386
+ []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=error_model,Co
+nformityMeasure=StandardMeasure)[] 
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [8]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [9]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
+Overfull \hbox (9.91612pt too wide) in paragraph at lines 504--507
+[]\T1/ptm/m/n/10 This func-tion ex-tracts the cross-validation pre-dic-tions fr
+om a caret model trained with cross-validation.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [10]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [11] (./Rd2.ind
+[12]
+
+LaTeX Font Warning: Font shape `T1/fi4/m/it' undefined
+(Font)              using `T1/fi4/m/n' instead on input line 6.
+
+[13]) (./Rd2.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
 (see the transcript file for additional information){/usr/local/texlive/2012/te
 xmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2012/texmf-dist/fonts/
 enc/dvips/inconsolata/fi4-ec.enc}</usr/local/texlive/2012/texmf-dist/fonts/type
 1/public/inconsolata/Inconsolata.pfb></usr/local/texlive/2012/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/ur
-w/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/ut
-mr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
-/usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (4 pages, 70867 bytes).
+type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/he
+lvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utm
+b8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/
+texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (13 pages, 190683 bytes).
 Transcript written on Rd2.log.
 Saving output to 'conformal-manual.pdf' ...
 Done
-You may want to clean up by 'rm -rf /var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T//Rtmp4wSpgT/Rd2pdf1a80f858b1'
+You may want to clean up by 'rm -rf /var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T//RtmpFSYNeg/Rd2pdf9b2029ea7458'

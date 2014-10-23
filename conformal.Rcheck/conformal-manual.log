@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  4 OCT 2014 18:15
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  23 OCT 2014 18:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/Rtmp4wSpgT/Rd2pdf1a8
-0f858b1/Rd2.tex
+**/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpFSYNeg/Rd2pdf9b2
+029ea7458/Rd2.tex
 
-(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/Rtmp4wSpgT/Rd2pdf1a80
-f858b1/Rd2.tex
+(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpFSYNeg/Rd2pdf9b20
+29ea7458/Rd2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -622,6 +622,23 @@ Now handling font encoding PD1 ...
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2008/03/30 v1.1d Input encoding file
 ))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
+)
 \@indexfile=\write3
 \openout3 = `Rd2.idx'.
 
@@ -658,13 +675,13 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
-\scratchdimen=\dimen107
+\scratchdimen=\dimen109
 \scratchbox=\box30
 \nofMPsegments=\count105
 \nofMParguments=\count106
 \everyMPshowfont=\toks20
 \MPscratchCnt=\count107
-\MPscratchDim=\dimen108
+\MPscratchDim=\dimen110
 \MPnumerator=\count108
 \makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks21
@@ -687,20 +704,36 @@ LaTeX Info: Redefining \nameref on input line 8.
 \@outlinefile=\write4
 \openout4 = `Rd2.out'.
 
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 11.
-LaTeX Font Info:    Try loading font information for T1+fi4 on input line 20.
+LaTeX Font Info:    Try loading font information for T1+fi4 on input line 21.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/inconsolata/t1fi4.fd
 File: t1fi4.fd 2009/05/28 T1/Inconsolata
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 27.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 27.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 28.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 28.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -716,61 +749,150 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 42--49
+
+ []
+
+[1
 
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (14.28088pt too wide) in paragraph at lines 69--69
+[2]
+
+LaTeX Warning: Command \j invalid in math mode on input line 102.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 102.
+
+
+</Users/icortes/Desktop/conformal/conformal.Rcheck/conformal/help/figures/class
+ificationScheme.pdf, id=85, 441.65pt x 200.75pt>
+File: /Users/icortes/Desktop/conformal/conformal.Rcheck/conformal/help/figures/
+classificationScheme.pdf Graphic file (type pdf)
+
+<use /Users/icortes/Desktop/conformal/conformal.Rcheck/conformal/help/figures/c
+lassificationScheme.pdf>
+Package pdftex.def Info: /Users/icortes/Desktop/conformal/conformal.Rcheck/conf
+ormal/help/figures/classificationScheme.pdf used on input line 132.
+(pdftex.def)             Requested size: 398.33858pt x 181.07153pt.
+
+Overfull \hbox (3.11946pt too wide) in paragraph at lines 132--133
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--139
+
+ []
+
+[3 </Users/icortes/Desktop/conformal/conformal.Rcheck/conformal/help/figures/cl
+assificationScheme.pdf>]
+Overfull \hbox (38.85063pt too wide) detected at line 154
+\OML/cmm/m/it/10 p:value\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ; 
+\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = [];   \OML/cmm/m/it/10 p:value\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 B\OT1/cmr/m/n/10 )
+ = []
+ []
+
+
+Overfull \hbox (2.40045pt too wide) in paragraph at lines 186--190
+\T1/ptm/m/n/10 2010, 339, pp 37-44. DOI: 10.1007/978-3-642-16239-8_8 [][]$\T1/f
+i4/m/n/10 http : / / link . springer . com / chapter /
+ []
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) [4]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 203.
+
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [5]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) [6] [7]
+Overfull \hbox (14.28088pt too wide) in paragraph at lines 370--370
  []\T1/fi4/m/n/9 tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, powe
 r.to=-6, power.by=1, base=2),[] 
  []
 
 
-Overfull \hbox (23.28088pt too wide) in paragraph at lines 85--85
- []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=ErrorModel,Con
-formityMeasure=StandardMeasure)[] 
+Overfull \hbox (27.78088pt too wide) in paragraph at lines 386--386
+ []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=error_model,Co
+nformityMeasure=StandardMeasure)[] 
  []
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [2] (./Rd2.ind
-[3]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 3.
- [4
+) [8]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) [9]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+Overfull \hbox (9.91612pt too wide) in paragraph at lines 504--507
+[]\T1/ptm/m/n/10 This func-tion ex-tracts the cross-validation pre-dic-tions fr
+om a caret model trained with cross-validation.
+ []
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) [10]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+) [11] (./Rd2.ind
+[12]
+
+LaTeX Font Warning: Font shape `T1/fi4/m/it' undefined
+(Font)              using `T1/fi4/m/n' instead on input line 6.
+
+[13
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 632.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 632.
  (./Rd2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 632.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 632.
 Package rerunfilecheck Info: File `Rd2.out' has not changed.
-(rerunfilecheck)             Checksum: 347CD2221FDB156EC00545524AA7AE38;134.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
+(rerunfilecheck)             Checksum: 10DE9C64900C6ACE3CF8852879EDC7AF;488.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 632.
  ) 
 Here is how much of TeX's memory you used:
- 6188 strings out of 493488
- 88571 string characters out of 3141326
- 169046 words of memory out of 3000000
- 9380 multiletter control sequences out of 15000+200000
- 40684 words of font info for 49 fonts, out of 3000000 for 9000
+ 6561 strings out of 493488
+ 95290 string characters out of 3141326
+ 173577 words of memory out of 3000000
+ 9657 multiletter control sequences out of 15000+200000
+ 38195 words of font info for 48 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,5n,27p,1161b,429s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,6n,34p,407b,588s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2012/texmf-dist/fonts/enc/dvips/inconsolata/fi4-ec.enc}</usr/local/texli
 ve/2012/texmf-dist/fonts/type1/public/inconsolata/Inconsolata.pfb></usr/local/t
-exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2012/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2
-012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-
-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts
-/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw
-/times/utmri8a.pfb>
-Output written on Rd2.pdf (4 pages, 70867 bytes).
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texli
+ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
+/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
+012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2012
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/
+texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-d
+ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/
+type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/
+times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on Rd2.pdf (13 pages, 190683 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 277 compressed objects within 3 object streams
+ 79 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

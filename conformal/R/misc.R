@@ -28,7 +28,7 @@ GetCVPreds <- function(model) {
 #############################################
 ### Generate an Error Model
 #############################################
-ErrorModel <- function(PointPredictionModel,x.train,algorithm="svm",...){
+ErrorModel <- function(PointPredictionModel,x.train,algorithm="svmRadial",...){
     predObsCV <- GetCVPreds(PointPredictionModel)
     error_model <- train(x.train, abs(predObsCV$pred - predObsCV$obs), algorithm, ...)
     return(error_model)

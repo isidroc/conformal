@@ -16,6 +16,7 @@ Found the following hidden files and directories:
   R/.DS_Store
   man/.DS_Store
   man/.Rapp.history
+  man/figures/.DS_Store
   man/.Rd2pdf2611
   man/.Rd2pdf4446
   man/.Rd2pdf4583
@@ -71,9 +72,6 @@ File 'conformal/R/onLoad.R':
 Package startup functions should not change the search path.
 See section 'Good practice' in '?.onAttach'.
 * checking Rd files ... WARNING
-prepare_Rd: ConformalClassification.Rd:11-13: Dropping empty section \arguments
-prepare_Rd: ConformalClassification.Rd:14-15: Dropping empty section \details
-prepare_Rd: ConformalClassification.Rd:16-18: Dropping empty section \value
 prepare_Rd: ConformalRegression.Rd: Only one \seealso section is allowed: the first will be used
 prepare_Rd: LogS.Rd:12: unknown macro '\circ'
 prepare_Rd: LogS.Rd:5-6: Dropping empty section \description
@@ -100,15 +98,7 @@ ErrorModel
   Mismatches in argument default values:
     Name: 'algorithm' Code: "svm" Docs: "svmRadial"
 
-* checking Rd \usage sections ... WARNING
-Undocumented arguments in documentation object 'ConformalClassification'
-  '...'
-
-Functions with \usage entries need to have the appropriate \alias
-entries, and all their arguments documented.
-The \usage entries must correspond to syntactically valid R code.
-See the chapter 'Writing R documentation files' in the 'Writing R
-Extensions' manual.
+* checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
 * checking contents of 'data' directory ... OK
@@ -119,53 +109,10 @@ Extensions' manual.
         by using R CMD build --resave-data
              old_size new_size compress
   LogS.RData   1003Kb    869Kb       xz
-* checking examples ... ERROR
-Running examples in 'conformal-Ex.R' failed
-The error most likely occurred in:
-
-> ### Name: ConformalRegression
-> ### Title: Conformal Prediction for Regression
-> ### Aliases: ConformalRegression
-> 
-> ### ** Examples
-> 
-> #############################################
-> ### Example
-> #############################################
-> 
-> # Optional for parallel training
-> #library(doMC)
-> #registerDoMC(cores=4)
-> 
-> data(LogS)
-> 
-> algorithm <- "svmRadial"
-> tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, power.to=-6, power.by=1, base=2), 
-+                          .C = expGrid(power.from=4, power.to=10, power.by=2, base=2))
-> trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)
-> set.seed(3)
-> model <- train(LogSDescsTrain, LogSTrain, algorithm, 
-+                tuneGrid=tune.grid, 
-+                trControl=trControl)
-Loading required package: kernlab
-Warning: package 'kernlab' was built under R version 3.0.2
-> 
-> 
-> # Train an error model
-> error_model <- ErrorModel(PointPredictionModel=model,x.train=LogSDescsTrain,
-+                           savePredictions=TRUE,algorithm=algorithm,
-+                           trControl=trControl, tune.grid=tune.grid)
-> 
-> # Instantiate the class and get the confidence intervals
-> example <- ConformalRegression$new()
-Conformal Prediction Class for Regression Instantiated
-> example$CalculateAlphas(model=model,error_model=error_model,ConformityMeasure=StandardMeasure)
-[1] "Calculating alphas.."
-
-> example$GetConfidenceIntervals(new.data=LogSDescsTest)
-[1] "Predicting (i) the value, and (ii) the error for the new data.."
-
-> example$CorrelationPlot(obs=LogSTest)
-Error in is.na(intervals) : 'intervals' is missing
-Calls: <Anonymous>
-Execution halted
+* checking examples ... OK
+* checking PDF version of manual ... OK
+WARNING: There were 7 warnings.
+NOTE: There were 2 notes.
+See
+  '/Users/icortes/Desktop/conformal/conformal.Rcheck/00check.log'
+for details.
