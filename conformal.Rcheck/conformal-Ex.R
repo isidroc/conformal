@@ -11,11 +11,12 @@ nameEx("ConformalClassification")
 flush(stderr()); flush(stdout())
 
 ### Name: ConformalClassification
-### Title: Class '"ConformalClassification"': Conformal Prediction for
-###   Classification
+### Title: Class Conformal Prediction for Classification
 ### Aliases: ConformalClassification
 
 ### ** Examples
+
+showClass("ConformalClassification")
 
 # Optional for parallel training
 #library(doMC)
@@ -62,12 +63,13 @@ nameEx("ConformalRegression")
 flush(stderr()); flush(stdout())
 
 ### Name: ConformalRegression
-### Title: Class '"ConformalRegression"': Conformal Prediction for
-###   Regression
+### Title: Class ConformalRegression: Conformal Prediction for Regression
 ### Aliases: ConformalRegression
 
 ### ** Examples
 
+
+showClass("ConformalRegression")
 #############################################
 ### Example
 #############################################

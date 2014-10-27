@@ -1,12 +1,27 @@
 ConformalClassification
+                        Class Conformal Prediction for Classification
+ConformalClassification-class
                         Class '"ConformalClassification"': Conformal
                         Prediction for Classification
-ConformalRegression     Class '"ConformalRegression"': Conformal
+ConformalRegression     Class ConformalRegression: Conformal Prediction
+                        for Regression
+ConformalRegression-class
+                        Class '"ConformalRegression"': Conformal
                         Prediction for Regression
 ErrorModel              Calculation of an error model
 GetCVPreds              Extract the cross-validation predictions for
                         the datapoints in the training set
 LogS                    Small Molecule Solubility (LogS) Data
+LogSDescsTest           Small Molecule Solubility (LogS) Data: PaDEL
+                        descriptors for the test set
+LogSDescsTrain          Small Molecule Solubility (LogS) Data: PaDEL
+                        descriptors for the taining set
+LogSTest                Small Molecule Solubility (LogS) Data:
+                        solubility values for the datapoints in the
+                        test set
+LogSTrain               Small Molecule Solubility (LogS) Data:
+                        solubility values for the datapoints in the
+                        training set
 StandardMeasure         Default Nonconformity measure used in
                         regression (ConformalRegression class)
 conformal               conformal: an R package to calculate prediction

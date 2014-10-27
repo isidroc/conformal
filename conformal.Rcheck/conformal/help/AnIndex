@@ -1,9 +1,15 @@
 conformal-package	conformal
 conformal	conformal
 ConformalClassification	ConformalClassification
+ConformalClassification-class	ConformalClassification-class
 ConformalRegression	ConformalRegression
+ConformalRegression-class	ConformalRegression-class
 ErrorModel	ErrorModel
 expGrid	expGrid
 GetCVPreds	GetCVPreds
 LogS	LogS
+LogSDescsTest	LogSDescsTest
+LogSDescsTrain	LogSDescsTrain
+LogSTest	LogSTest
+LogSTrain	LogSTrain
 StandardMeasure	StandardMeasure

@@ -36,16 +36,20 @@
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd cross-references ... OK
-* checking for missing documentation entries ... WARNING
-Undocumented data sets:
-  'LogSDescsTest' 'LogSDescsTrain' 'LogSTest' 'LogSTrain'
-Undocumented S4 classes:
-  'ConformalClassification' 'ConformalRegression'
-All user-level objects in a package (including S4 classes and methods)
-should have documentation entries.
-See the chapter 'Writing R documentation files' in the 'Writing R
-Extensions' manual.
-* checking for code/documentation mismatches ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... WARNING
+Data with usage in documentation object 'LogSDescsTest' but not in code:
+  LogSDescsTest
+
+Data with usage in documentation object 'LogSDescsTrain' but not in code:
+  LogSDescsTrain
+
+Data with usage in documentation object 'LogSTest' but not in code:
+  LogSTest
+
+Data with usage in documentation object 'LogSTrain' but not in code:
+  LogSTrain
+
 * checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
@@ -57,40 +61,9 @@ Extensions' manual.
         by using R CMD build --resave-data
              old_size new_size compress
   LogS.RData   1003Kb    869Kb       xz
-* checking examples ... ERROR
-Running examples in 'conformal-Ex.R' failed
-The error most likely occurred in:
-
-> ### Name: ConformalClassification
-> ### Title: Class '"ConformalClassification"': Conformal Prediction for
-> ###   Classification
-> ### Aliases: ConformalClassification
-> 
-> ### ** Examples
-> 
-> # Optional for parallel training
-> #library(doMC)
-> #registerDoMC(cores=4)
-> 
-> data(LogS)
-> 
-> # convert data to categorical
-> LogSTrain[LogSTrain > -4] <- 1
-> LogSTrain[LogSTrain <= -4] <- 2
-> LogSTest[LogSTest > -4] <- 1
-> LogSTest[LogSTest <= -4] <- 2
-> 
-> LogSTrain <- factor(LogSTrain)
-> LogSTest <- factor(LogSTest)
-> 
-> algorithm <- "rf"
-> 
-> trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)
-> set.seed(3)
-> model <- train(LogSDescsTrain, LogSTrain, 
-+          algorithm,type="classification", 
-+          trControl=trControl,predict.all=TRUE,
-+          keep.forest=TRUE,norm.votes=TRUE,
-+          ntree=500)
-
-Execution halted
+* checking examples ... OK
+* checking PDF version of manual ... OK
+WARNING: There were 2 warnings.
+See
+  '/Users/icortes/Desktop/conformal/conformal.Rcheck/00check.log'
+for details.

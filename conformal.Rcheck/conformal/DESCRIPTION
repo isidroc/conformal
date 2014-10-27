@@ -12,4 +12,4 @@ Description: implementation of conformal prediction using caret models for class
 License: GPL
 LazyLoad: yes
 Packaged: 2014-10-04 13:27:39 UTC; Isidro Cortes Ciriano
-Built: R 3.0.1; ; 2014-10-27 16:17:45 UTC; unix
+Built: R 3.0.1; ; 2014-10-27 17:02:12 UTC; unix
