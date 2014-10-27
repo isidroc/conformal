@@ -1,6 +1,6 @@
 conformal: an R package to calculate prediction errors in the conformal prediction framework
 
-Object-oriented programming (OOP) implementation 
+Object-oriented programming (OOP) implementation
 of conformal prediction using reference classes.
 Prediction errors for regression (confidence regions)
 and for classification (p.values)

@@ -13,106 +13,11 @@
 * checking for hidden files and directories ... NOTE
 Found the following hidden files and directories:
   .DS_Store
-  R/.DS_Store
-  man/.DS_Store
-  man/.Rapp.history
-  man/figures/.DS_Store
-  man/.Rd2pdf2611
-  man/.Rd2pdf4446
-  man/.Rd2pdf4583
-  man/.Rd2pdf4653
+  R/.ConformalRegression.R.swp
 These were most likely included in error. See section 'Package
 structure' in the 'Writing R Extensions' manual.
 * checking for portable file names ... OK
 * checking for sufficient/correct file permissions ... OK
-* checking whether package 'conformal' can be installed ... WARNING
-Found the following significant warnings:
-  Warning: package 'caret' was built under R version 3.0.2
-  Warning: package 'lattice' was built under R version 3.0.2
-  Warning: /Users/icortes/Desktop/conformal/conformal/man/ConformalRegression.Rd: Only one \seealso section is allowed: the first will be used
-  Warning: /Users/icortes/Desktop/conformal/conformal/man/LogS.Rd:12: unknown macro '\circ'
-  Warning: package 'caret' was built under R version 3.0.2
-  Warning: package 'lattice' was built under R version 3.0.2
+* checking whether package 'conformal' can be installed ... ERROR
+Installation failed.
 See '/Users/icortes/Desktop/conformal/conformal.Rcheck/00install.out' for details.
-* checking installed package size ... OK
-* checking package directory ... OK
-* checking DESCRIPTION meta-information ... OK
-* checking top-level files ... OK
-* checking for left-over files ... OK
-* checking index information ... OK
-* checking package subdirectories ... WARNING
-Found the following directories with names of Rd2pdf directories:
-  ./man/.Rd2pdf2611
-  ./man/.Rd2pdf4446
-  ./man/.Rd2pdf4583
-  ./man/.Rd2pdf4653
-Most likely, these were included erroneously.
-* checking R files for non-ASCII characters ... OK
-* checking R files for syntax errors ... OK
-* checking whether the package can be loaded ... OK
-* checking whether the package can be loaded with stated dependencies ... OK
-* checking whether the package can be unloaded cleanly ... OK
-* checking whether the namespace can be loaded with stated dependencies ... OK
-* checking whether the namespace can be unloaded cleanly ... OK
-* checking for unstated dependencies in R code ... WARNING
-package 'methods' is used but not declared
-See the information on DESCRIPTION files in the chapter 'Creating R
-packages' of the 'Writing R Extensions' manual.
-* checking S3 generic/method consistency ... OK
-* checking replacement functions ... OK
-* checking foreign function calls ... OK
-* checking R code for possible problems ... NOTE
-File 'conformal/R/onLoad.R':
-  .onLoad calls:
-    packageStartupMessage("Conformal prediction in R. Isidro Cortes-Ciriano <isidrolauscher@gmail.com>")
-    require(ggplot2)
-    require(grid)
-    require(caret)
-
-Package startup functions should not change the search path.
-See section 'Good practice' in '?.onAttach'.
-* checking Rd files ... WARNING
-prepare_Rd: ConformalRegression.Rd: Only one \seealso section is allowed: the first will be used
-prepare_Rd: LogS.Rd:12: unknown macro '\circ'
-prepare_Rd: LogS.Rd:5-6: Dropping empty section \description
-prepare_Rd: LogS.Rd:8-10: Dropping empty section \format
-prepare_Rd: LogS.Rd:36-37: Dropping empty section \source
-checkRd: (5) LogS.Rd:0-47: Must have a \description
-* checking Rd metadata ... OK
-* checking Rd cross-references ... OK
-* checking for missing documentation entries ... WARNING
-Undocumented data sets:
-  'LogSDescsTest' 'LogSDescsTrain' 'LogSTest' 'LogSTrain'
-Undocumented S4 classes:
-  'ConformalClassification' 'ConformalRegression'
-All user-level objects in a package (including S4 classes and methods)
-should have documentation entries.
-See the chapter 'Writing R documentation files' in the 'Writing R
-Extensions' manual.
-* checking for code/documentation mismatches ... WARNING
-Codoc mismatches from documentation object 'ErrorModel':
-ErrorModel
-  Code: function(PointPredictionModel, x.train, algorithm = "svm", ...)
-  Docs: function(PointPredictionModel, x.train, algorithm =
-                 "svmRadial", ...)
-  Mismatches in argument default values:
-    Name: 'algorithm' Code: "svm" Docs: "svmRadial"
-
-* checking Rd \usage sections ... OK
-* checking Rd contents ... OK
-* checking for unstated dependencies in examples ... OK
-* checking contents of 'data' directory ... OK
-* checking data for non-ASCII characters ... OK
-* checking data for ASCII and uncompressed saves ... WARNING
-  
-  Note: significantly better compression could be obtained
-        by using R CMD build --resave-data
-             old_size new_size compress
-  LogS.RData   1003Kb    869Kb       xz
-* checking examples ... OK
-* checking PDF version of manual ... OK
-WARNING: There were 7 warnings.
-NOTE: There were 2 notes.
-See
-  '/Users/icortes/Desktop/conformal/conformal.Rcheck/00check.log'
-for details.
