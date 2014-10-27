@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="550"
+   height="250"
+   id="svg2669"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.2 r9819"
+   version="1.0"
+   sodipodi:docname="classificationScheme.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs2671">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       id="perspective2489"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       id="perspective5291"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       id="perspective5149"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       id="perspective2677"
+       inkscape:vp_x="-50 : 600 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="700 : 600 : 1"
+       inkscape:persp3d-origin="300 : 400 : 1" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.1190148"
+     inkscape:cx="295.4201"
+     inkscape:cy="103.75544"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1440"
+     inkscape:window-height="796"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata2674">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+        <dc:date />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier />
+        <dc:source />
+        <dc:relation />
+        <dc:language />
+        <dc:subject>
+          <rdf:Bag />
+        </dc:subject>
+        <dc:coverage />
+        <dc:description />
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:contributor>
+        <cc:license
+           rdf:resource="" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,50)">
+    <path
+       id="path2328"
+       sodipodi:nodetypes="cccc"
+       d="m 76.877229,162.39806 -17.930996,0 0,-135.088677 17.930996,0"
+       style="fill:none;stroke:#000000;stroke-width:0.99702841;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect3129"
+       width="23.123953"
+       height="138.74371"
+       x="74.45063"
+       y="25.390554" />
+    <path
+       id="path2330"
+       sodipodi:nodetypes="cccc"
+       d="m 142.55133,162.39806 17.931,0 0,-135.088677 -17.45908,-0.471917"
+       style="fill:none;stroke:#000000;stroke-width:0.99702841;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect3127"
+       width="15.101357"
+       height="133.08072"
+       x="126.94579"
+       y="24.918636" />
+    <text
+       id="text3282"
+       y="71"
+       x="64.428574"
+       style="font-size:16px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="0"
+         x="0"
+         id="tspan3284"
+         sodipodi:role="line"><tspan
+           style="font-size:9px"
+           id="tspan2534" /></tspan></text>
+    <text
+       id="text3306"
+       y="23.689255"
+       x="62.093414"
+       style="font-size:12px;font-style:normal;font-weight:normal;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         y="23.689255"
+         x="62.093414"
+         id="tspan3308"
+         sodipodi:role="line"><tspan
+           style="font-size:18px"
+           id="tspan3237"><tspan
+             style="font-style:italic;-inkscape-font-specification:Gill Sans Italic"
+             id="tspan3239"><tspan
+               style="font-weight:bold;-inkscape-font-specification:Gill Sans Bold Italic"
+               id="tspan3241"><tspan
+                 style="font-style:normal;-inkscape-font-specification:Gill Sans Bold"
+                 id="tspan3243"><tspan
+                   style="font-weight:normal;-inkscape-font-specification:Gill Sans"
+                   id="tspan3245"><tspan
+                     style="font-size:20px"
+                     id="tspan3247">   A          </tspan></tspan></tspan></tspan></tspan></tspan></tspan></text>
+    <text
+       sodipodi:linespacing="89.999998%"
+       id="text3310"
+       y="32.744743"
+       x="37.010155"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:89.99999762%;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         y="32.744743"
+         x="37.010155"
+         id="tspan3312"
+         sodipodi:role="line">N<tspan
+   style="font-size:65.00091553%;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;baseline-shift:sub;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+   id="tspan3116">tr</tspan></tspan><tspan
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3314"
+         y="43.544743"
+         x="37.010155"
+         sodipodi:role="line">rows</tspan></text>
+    <path
+       id="path6456"
+       d="m 31.169863,50.914025 0,100.548705 14.189851,0 0,-100.548705 -14.189851,0 z"
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path6490"
+       d="M 55.466577,147.39676 38.363329,161.53957 21.26005,147.39676 c 10.097781,2.25943 23.913241,2.24641 34.206527,0 z"
+       style="font-size:12px;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:100%;writing-mode:tb-rl;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="-97.634842"
+       y="41.0518"
+       id="text3333"
+       sodipodi:linespacing="100%"
+       transform="matrix(-0.00176133,-0.99999845,0.99999845,-0.00176133,0,0)"><tspan
+         sodipodi:role="line"
+         x="-97.634842"
+         y="41.0518"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+         id="tspan5165">Training set</tspan></text>
+    <g
+       id="g3338"
+       transform="matrix(0.50370174,0.16900751,-0.08575093,0.25556789,-4.3662472,78.03844)"
+       style="fill:#999999">
+      <path
+         inkscape:connector-curvature="0"
+         style="font-size:12px;fill:#999999;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="m 376.87991,17.125736 21.3994,6.538105 -17.24708,29.365472 c 1.86126,-12.42217 0.1664,-26.912525 -4.15235,-35.90356 z"
+         id="path3385"
+         inkscape:transform-center-y="-0.50914656"
+         inkscape:transform-center-x="-0.56301874" />
+    </g>
+    <text
+       id="text2523"
+       y="47.850555"
+       x="123.1143"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:136.00000143%;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"
+       sodipodi:linespacing="136%"><tspan
+         y="47.850555"
+         x="123.1143"
+         id="tspan2525"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans">0.01</tspan><tspan
+         y="64.170555"
+         x="123.1143"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3118">0.10</tspan><tspan
+         y="80.490555"
+         x="123.1143"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3120">0.33</tspan><tspan
+         y="96.810555"
+         x="123.1143"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3122">0.37</tspan><tspan
+         y="113.13055"
+         x="123.1143"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3124">0.45</tspan><tspan
+         y="129.45056"
+         x="123.1143"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3126">0.67</tspan><tspan
+         y="145.77055"
+         x="123.1143"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3531">0.87</tspan><tspan
+         y="162.09056"
+         x="123.1143"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3128" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+       x="51.169792"
+       y="176.44933"
+       id="text3104"
+       sodipodi:linespacing="117.99999%"><tspan
+         sodipodi:role="line"
+         id="tspan3106"
+         x="51.169792"
+         y="176.44933"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"><tspan
+   style="fill:#0000ff"
+   id="tspan3110">N</tspan><tspan
+   style="font-size:65.00091553%;baseline-shift:sub;fill:#0000ff"
+   id="tspan3108">tr</tspan>-by-<tspan
+   style="fill:#ff0000"
+   id="tspan3114">classes</tspan> matrix</tspan></text>
+    <text
+       id="text2523-9"
+       y="48.420631"
+       x="74.955986"
+       style="font-size:16px;font-style:normal;font-weight:normal;line-height:136.00000143%;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"
+       sodipodi:linespacing="136%"><tspan
+         y="48.420631"
+         x="74.955986"
+         id="tspan2525-4"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans">0.03</tspan><tspan
+         y="64.740631"
+         x="74.955986"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3118-1">0.23</tspan><tspan
+         y="81.060631"
+         x="74.955986"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3120-3">0.29</tspan><tspan
+         y="97.38063"
+         x="74.955986"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3122-7">0.38</tspan><tspan
+         y="113.70063"
+         x="74.955986"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3124-8">0.78</tspan><tspan
+         y="130.02063"
+         x="74.955986"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3126-8">0.91</tspan><tspan
+         y="146.34064"
+         x="74.955986"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:136.00000143%;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3529">0.98</tspan><tspan
+         y="162.66063"
+         x="74.955986"
+         sodipodi:role="line"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3128-3" /></text>
+    <text
+       id="text3306-7"
+       y="23.689255"
+       x="112.19854"
+       style="font-size:12px;font-style:normal;font-weight:normal;fill:#ff0000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         y="23.689255"
+         x="112.19854"
+         id="tspan3308-74"
+         sodipodi:role="line"><tspan
+           style="font-size:18px"
+           id="tspan3237-4"><tspan
+             style="font-style:italic;-inkscape-font-specification:Gill Sans Italic"
+             id="tspan3239-9"><tspan
+               style="font-weight:bold;-inkscape-font-specification:Gill Sans Bold Italic"
+               id="tspan3241-1"><tspan
+                 style="font-style:normal;-inkscape-font-specification:Gill Sans Bold"
+                 id="tspan3243-5"><tspan
+                   style="font-weight:normal;-inkscape-font-specification:Gill Sans"
+                   id="tspan3245-5"><tspan
+                     style="font-size:20px"
+                     id="tspan3247-5">   B          </tspan></tspan></tspan></tspan></tspan></tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+       x="106.68171"
+       y="-19.303295"
+       id="text3104-3"
+       sodipodi:linespacing="117.99999%"><tspan
+         sodipodi:role="line"
+         id="tspan3106-9"
+         x="108.62312"
+         y="-19.303295"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans">Nonconformity </tspan><tspan
+         sodipodi:role="line"
+         x="108.62312"
+         y="-2.7832959"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3449">scores matrix </tspan></text>
+    <rect
+       style="fill:none;stroke:#000000"
+       id="rect3318"
+       width="29.258881"
+       height="124.11428"
+       x="119.88962"
+       y="31.907665" />
+    <rect
+       style="fill:none;stroke:#000000"
+       id="rect3318-5"
+       width="29.258881"
+       height="124.11428"
+       x="70.338287"
+       y="32.143623" />
+    <g
+       id="g3338-2"
+       transform="matrix(0.40080055,0.34876626,-0.17695682,0.20335794,84.066131,-27.358768)">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline"
+         d="m 246.70001,469.62806 123.19276,-218.61124 -2.66292,-5.0844 -123.19276,218.61124 2.66292,5.0844 z"
+         id="path3383-9" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline"
+         d="m 297.25128,305.29778 67.28212,-49.42365 -0.98599,-8.07532 -67.28212,49.42364 0.98599,8.07533 z"
+         id="path3383-9-5" />
+      <text
+         xml:space="preserve"
+         style="font-size:58.13222885px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+         x="355.20493"
+         y="463.26578"
+         id="text3388"
+         sodipodi:linespacing="117.99999%"
+         transform="matrix(0.53734775,-0.92157096,0.46758613,1.059065,0,0)"><tspan
+           sodipodi:role="line"
+           id="tspan3390"
+           x="355.20493"
+           y="463.26578"
+           style="font-size:34.35086441px;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans">Mondrian</tspan><tspan
+           sodipodi:role="line"
+           x="355.20493"
+           y="503.7998"
+           id="tspan3392"
+           style="font-size:34.35086441px;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans">class lists</tspan></text>
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3483"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+       transform="translate(0,-50)"><flowRegion
+         id="flowRegion3485"><rect
+           id="rect3487"
+           width="149.1259"
+           height="25.011623"
+           x="249.64432"
+           y="89.54808" /></flowRegion><flowPara
+         id="flowPara3489" /></flowRoot>    <g
+       id="g3722"
+       transform="translate(0,-4)">
+      <text
+         sodipodi:linespacing="117.99999%"
+         id="text3408-3"
+         y="12.181934"
+         x="390.78918"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+         xml:space="preserve"><tspan
+           id="tspan3414-7"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+           y="12.181934"
+           x="392.45325"
+           sodipodi:role="line">How many elements in the corresponding Mondrian </tspan><tspan
+           id="tspan3499"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+           y="26.341934"
+           x="390.78918"
+           sodipodi:role="line">class list are smaller than p(A) and p(B)? :</tspan></text>
+      <text
+         sodipodi:linespacing="117.99999%"
+         id="text3408-3-3-8"
+         y="43.434849"
+         x="393.6572"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+         xml:space="preserve"><tspan
+           id="tspan3499-3-5"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+           y="43.434849"
+           x="395.32126"
+           sodipodi:role="line">1/7 for A, and 6/7 for B </tspan></text>
+      <text
+         sodipodi:linespacing="117.99999%"
+         id="text3408-3-3-8-8"
+         y="59.300575"
+         x="390.60107"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+         xml:space="preserve"><tspan
+           id="tspan3499-3-5-9"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+           y="59.300575"
+           x="392.26514"
+           sodipodi:role="line">The p.values are thus: </tspan><tspan
+           id="tspan3575"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+           y="73.460571"
+           x="390.60107"
+           sodipodi:role="line">p.value(A): 3/7 = 0.14; p.value(B): 6/7=0.86</tspan></text>
+    </g>
+    <g
+       id="g3793"
+       transform="translate(12,-2)">
+      <text
+         sodipodi:linespacing="117.99999%"
+         id="text3408-6"
+         y="-27.97559"
+         x="462.04871"
+         style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+         xml:space="preserve"><tspan
+           id="tspan3414-4"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+           y="-27.97559"
+           x="462.04871"
+           sodipodi:role="line">p(A): 0.2;  p(B): 0.8</tspan></text>
+      <g
+         transform="translate(22.292449,-4.5842477)"
+         id="g3714">
+        <text
+           xml:space="preserve"
+           style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+           x="299.95654"
+           y="-30.879299"
+           id="text3408"
+           sodipodi:linespacing="117.99999%"><tspan
+             sodipodi:role="line"
+             x="301.62061"
+             y="-30.879299"
+             id="tspan3412"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans">Classification probabilities accross </tspan><tspan
+             sodipodi:role="line"
+             x="301.62061"
+             y="-16.719299"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+             id="tspan3414">the RF trees for x <tspan
+   style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;baseline-shift:sub;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+   id="tspan3416">ext j </tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+           x="361.51855"
+           y="-18.297886"
+           id="text3408-6-6"
+           sodipodi:linespacing="117.99999%"><tspan
+             sodipodi:role="line"
+             x="361.51855"
+             y="-18.297886"
+             style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+             id="tspan3414-4-0">:</tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+       x="397.22464"
+       y="100.17265"
+       id="text3408-3-3"
+       sodipodi:linespacing="117.99999%"><tspan
+         sodipodi:role="line"
+         x="398.8887"
+         y="100.17265"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3499-7">Are these values higher than the </tspan><tspan
+         sodipodi:role="line"
+         x="397.22464"
+         y="114.728"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3645">significance level, 1-ε =0.2?</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+       x="373.1004"
+       y="144.96295"
+       id="text3408-3-3-1"
+       sodipodi:linespacing="117.99999%"><tspan
+         sodipodi:role="line"
+         x="373.1004"
+         y="144.96295"
+         style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3499-7-5" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+       x="327.57846"
+       y="138.09688"
+       id="text3408-3-3-0"
+       sodipodi:linespacing="117.99999%"><tspan
+         sodipodi:role="line"
+         x="329.24252"
+         y="138.09688"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3645-5"><tspan
+   style="fill:#ff0000"
+   id="tspan3734">A</tspan>: <tspan
+   style="font-weight:bold;-inkscape-font-specification:Gill Sans Bold"
+   id="tspan3736">No</tspan> (0.14 &lt; 0.20): </tspan><tspan
+         sodipodi:role="line"
+         x="329.24252"
+         y="152.28786"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3673">X <tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3850">ext j</tspan> is not </tspan><tspan
+         sodipodi:role="line"
+         x="329.24252"
+         y="166.44786"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3677">predicted to belong to </tspan><tspan
+         sodipodi:role="line"
+         x="329.24252"
+         y="180.60785"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3675">class A for that </tspan><tspan
+         sodipodi:role="line"
+         x="327.57846"
+         y="194.76785"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3679">confidence level (0.8)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+       x="480.04059"
+       y="136.45673"
+       id="text3408-3-3-0-6"
+       sodipodi:linespacing="117.99999%"><tspan
+         sodipodi:role="line"
+         x="481.70465"
+         y="136.45673"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3645-5-0"><tspan
+   style="fill:#ff0000"
+   id="tspan3732">B</tspan>: <tspan
+   style="font-weight:bold;-inkscape-font-specification:Gill Sans Bold"
+   id="tspan3738">Yes</tspan> (0.86 &gt; 0.20): </tspan><tspan
+         sodipodi:role="line"
+         x="481.70465"
+         y="150.64771"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3673-3">X <tspan
+   style="font-size:65.00091553%;baseline-shift:sub"
+   id="tspan3848">ext j </tspan>is </tspan><tspan
+         sodipodi:role="line"
+         x="481.70465"
+         y="164.80771"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3677-3">predicted to belong to </tspan><tspan
+         sodipodi:role="line"
+         x="481.70465"
+         y="178.9677"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3675-5">class B for that </tspan><tspan
+         sodipodi:role="line"
+         x="480.04059"
+         y="193.1277"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Gill Sans;-inkscape-font-specification:Gill Sans"
+         id="tspan3679-0">confidence level (0.8)</tspan></text>
+    <g
+       id="g3761"
+       style="fill:#b3b3b3">
+      <g
+         id="g3765"
+         transform="matrix(1,0,0,0.36759661,-171.77794,-50.414142)">
+        <path
+           sodipodi:nodetypes="ccccc"
+           id="path6456-0"
+           d="m 559.10745,102.32569 0,14.5487 14.18986,0 0,-14.5487 z"
+           style="fill:#b3b3b3;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path6490-1"
+           d="m 583.40417,112.80843 -17.10325,14.1428 -17.10328,-14.1428 c 10.09778,2.25943 23.91324,2.24641 34.20653,0 z"
+           style="font-size:12px;fill:#b3b3b3;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         style="fill:#b3b3b3"
+         id="g3765-6"
+         transform="matrix(1,0,0,0.36759661,-171.30602,43.183357)">
+        <path
+           sodipodi:nodetypes="ccccc"
+           id="path6456-0-0"
+           d="m 559.10745,102.32569 0,14.5487 14.18986,0 0,-14.5487 z"
+           style="fill:#b3b3b3;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path6490-1-7"
+           d="m 583.40417,112.80843 -17.10325,14.1428 -17.10328,-14.1428 c 10.09778,2.25943 23.91324,2.24641 34.20653,0 z"
+           style="font-size:12px;fill:#b3b3b3;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+       x="8.9664307"
+       y="-16.555794"
+       id="text3804"
+       sodipodi:linespacing="117.99999%"><tspan
+         sodipodi:role="line"
+         id="tspan3806"
+         x="8.9664307"
+         y="-16.555794"
+         style="font-size:25px;font-weight:bold;-inkscape-font-specification:Palatino Linotype Bold">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:117.99999475%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+       x="223.87622"
+       y="-15.676888"
+       id="text3804-1"
+       sodipodi:linespacing="117.99999%"><tspan
+         sodipodi:role="line"
+         id="tspan3806-8"
+         x="223.87622"
+         y="-15.676888"
+         style="font-size:25px;font-weight:bold;-inkscape-font-specification:Palatino Linotype Bold">B</tspan></text>
+  </g>
+</svg>

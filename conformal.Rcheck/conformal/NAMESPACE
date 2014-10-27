@@ -1,0 +1,7 @@
+exportPattern(".")
+
+# import the packages specified in: Imports or Depends
+import(caret)
+import(ggplot2)
+import(grid)
+import(randomForest)

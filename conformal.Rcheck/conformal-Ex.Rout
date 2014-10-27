@@ -1,0 +1,72 @@
+
+R version 3.0.1 (2013-05-16) -- "Good Sport"
+Copyright (C) 2013 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin10.8.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "conformal"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> library('conformal')
+Loading required package: caret
+Loading required package: lattice
+Loading required package: ggplot2
+Loading required package: grid
+Loading required package: randomForest
+randomForest 4.6-7
+Type rfNews() to see new features/changes/bug fixes.
+Loading required package: e1071
+> 
+> base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("ConformalClassification")
+> ### * ConformalClassification
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: ConformalClassification
+> ### Title: Class '"ConformalClassification"': Conformal Prediction for
+> ###   Classification
+> ### Aliases: ConformalClassification
+> 
+> ### ** Examples
+> 
+> # Optional for parallel training
+> #library(doMC)
+> #registerDoMC(cores=4)
+> 
+> data(LogS)
+> 
+> # convert data to categorical
+> LogSTrain[LogSTrain > -4] <- 1
+> LogSTrain[LogSTrain <= -4] <- 2
+> LogSTest[LogSTest > -4] <- 1
+> LogSTest[LogSTest <= -4] <- 2
+> 
+> LogSTrain <- factor(LogSTrain)
+> LogSTest <- factor(LogSTest)
+> 
+> algorithm <- "rf"
+> 
+> trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)
+> set.seed(3)
+> model <- train(LogSDescsTrain, LogSTrain, 
++          algorithm,type="classification", 
++          trControl=trControl,predict.all=TRUE,
++          keep.forest=TRUE,norm.votes=TRUE,
++          ntree=500)
+
+Execution halted
