@@ -80,11 +80,14 @@ algorithm <- "rf"
 
 trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)
 set.seed(3)
+
+#number of trees
+nb_trees = 100
 model <- train(LogSDescsTrain, LogSTrain, 
          algorithm,type="classification", 
          trControl=trControl,predict.all=TRUE,
          keep.forest=TRUE,norm.votes=TRUE,
-         ntree=500)
+         ntree=nb_trees)
 
 
 # Instantiate the class and get the p.values

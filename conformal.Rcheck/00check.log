@@ -5,6 +5,9 @@
 * checking for file 'conformal/DESCRIPTION' ... OK
 * checking extension type ... Package
 * this is package 'conformal' version '0.1'
+* checking CRAN incoming feasibility ... NOTE
+Maintainer: 'Isidro Cortes <isidrolauscher@gmail.com>'
+New submission
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -37,19 +40,7 @@
 * checking Rd metadata ... OK
 * checking Rd cross-references ... OK
 * checking for missing documentation entries ... OK
-* checking for code/documentation mismatches ... WARNING
-Data with usage in documentation object 'LogSDescsTest' but not in code:
-  LogSDescsTest
-
-Data with usage in documentation object 'LogSDescsTrain' but not in code:
-  LogSDescsTrain
-
-Data with usage in documentation object 'LogSTest' but not in code:
-  LogSTest
-
-Data with usage in documentation object 'LogSTrain' but not in code:
-  LogSTrain
-
+* checking for code/documentation mismatches ... OK
 * checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
@@ -63,7 +54,8 @@ Data with usage in documentation object 'LogSTrain' but not in code:
   LogS.RData   1003Kb    869Kb       xz
 * checking examples ... OK
 * checking PDF version of manual ... OK
-WARNING: There were 2 warnings.
+WARNING: There was 1 warning.
+NOTE: There was 1 note.
 See
   '/Users/icortes/Desktop/conformal/conformal.Rcheck/00check.log'
 for details.

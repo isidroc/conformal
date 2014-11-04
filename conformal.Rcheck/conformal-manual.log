@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  27 OCT 2014 18:07
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  4 NOV 2014 14:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpHujko3/Rd2pdfcfd
-61d6adc7f/Rd2.tex
+**/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpS2O2YE/Rd2pdf3b1
+b5c89898a/Rd2.tex
 
-(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpHujko3/Rd2pdfcfd6
-1d6adc7f/Rd2.tex
+(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpS2O2YE/Rd2pdf3b1b
+5c89898a/Rd2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -812,7 +812,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-Underfull \hbox (badness 2253) in paragraph at lines 298--298
+Underfull \hbox (badness 2253) in paragraph at lines 301--301
 []\T1/ptm/m/it/10 Class \T1/fi4/m/n/10 "ConformalClassification"\T1/ptm/m/it/10
  : Con-for-mal Pre-dic-tion for
  []
@@ -820,13 +820,13 @@ Underfull \hbox (badness 2253) in paragraph at lines 298--298
 [6] (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [7] [8]
-Overfull \hbox (14.28088pt too wide) in paragraph at lines 430--430
+Overfull \hbox (14.28088pt too wide) in paragraph at lines 433--433
  []\T1/fi4/m/n/9 tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, powe
 r.to=-6, power.by=1, base=2),[] 
  []
 
 
-Overfull \hbox (27.78088pt too wide) in paragraph at lines 446--446
+Overfull \hbox (27.78088pt too wide) in paragraph at lines 450--450
  []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=error_model,Co
 nformityMeasure=StandardMeasure)[] 
  []
@@ -834,7 +834,7 @@ nformityMeasure=StandardMeasure)[]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [9]
-Overfull \hbox (3.86938pt too wide) in paragraph at lines 484--485
+Overfull \hbox (3.86938pt too wide) in paragraph at lines 488--489
 []\T1/ptm/m/n/10 this method cal-cu-lates the vec-
  []
 
@@ -847,7 +847,7 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-Overfull \hbox (9.91612pt too wide) in paragraph at lines 618--621
+Overfull \hbox (9.91612pt too wide) in paragraph at lines 622--625
 []\T1/ptm/m/n/10 This func-tion ex-tracts the cross-validation pre-dic-tions fr
 om a caret model trained with cross-validation.
  []
@@ -860,16 +860,16 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [13]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 ) [14]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) [15]
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-) (./Rd2.ind
+) [15] (./Rd2.ind
 [16]
 
 LaTeX Font Warning: Font shape `T1/fi4/m/it' undefined
@@ -879,23 +879,23 @@ LaTeX Font Warning: Font shape `T1/fi4/m/it' undefined
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 863.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 863.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 837.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 837.
  (./Rd2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 863.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 863.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 837.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 837.
 Package rerunfilecheck Info: File `Rd2.out' has not changed.
 (rerunfilecheck)             Checksum: 33180C3653B637D89DE6A8566922DCC8;894.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 863.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 837.
  ) 
 Here is how much of TeX's memory you used:
- 6629 strings out of 493488
- 96826 string characters out of 3141326
- 173578 words of memory out of 3000000
+ 6624 strings out of 493488
+ 96771 string characters out of 3141326
+ 174578 words of memory out of 3000000
  9663 multiletter control sequences out of 15000+200000
  38195 words of font info for 48 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -915,10 +915,10 @@ ist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on Rd2.pdf (17 pages, 202951 bytes).
+Output written on Rd2.pdf (17 pages, 202693 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 422 compressed objects within 5 object streams
- 129 named destinations out of 1000 (max. 500000)
+ 464 PDF objects out of 1000 (max. 8388607)
+ 416 compressed objects within 5 object streams
+ 124 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

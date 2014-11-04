@@ -5,7 +5,6 @@
 \description{
 	PaDEL descriptors have been computed for the test set.
 }
-\usage{data(LogSDescsTest)}
 \details{
 
 LogSDescsTest is a data frame with PaDEL descriptors for the datapoints in the test set (30\% of the \code{\link{LogS}} data).

@@ -91,7 +91,8 @@ model <- train(LogSDescsTrain, LogSTrain, algorithm,
 # Train an error model
 error_model <- ErrorModel(PointPredictionModel=model,x.train=LogSDescsTrain,
                           savePredictions=TRUE,algorithm=algorithm,
-                          trControl=trControl, tune.grid=tune.grid)
+                          trControl=trControl, 
+                          tune.grid=tune.grid)
 
 # Instantiate the class and get the confidence intervals
 example <- ConformalRegression$new()

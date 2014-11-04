@@ -5,7 +5,6 @@
 \description{
 Solubility values for the datapoints in the training set.
 }
-\usage{data(LogSTrain)}
 \details{
 
 LogSTrain is a vector containing the solubility values for the datapoints in the training set (30\% of the \code{\link{LogS}} data).

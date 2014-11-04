@@ -5,7 +5,6 @@
 \description{
 	PaDEL descriptors have been computed for the training set.
 }
-\usage{data(LogSDescsTrain)}
 \details{
 
 LogSDescsTrain is a data frame with PaDEL descriptors for the datapoints in the training set (30\% of the \code{\link{LogS}} data).

@@ -6,7 +6,6 @@
 	Aqueous solubility datas for 1,606 small molecules. PaDEL descriptors have been computed for these molecules.
 	The data has been split into a training (70\%) and a test (30\%) set.
 }
-\usage{data(LogS)}
 \details{
 This dataset comprises the aqueous solubility (S) values at a temperature of 20-25 Celsius degrees in mol/L, expressed as logS, for 1,708 small molecules
 reported by Wang et al.

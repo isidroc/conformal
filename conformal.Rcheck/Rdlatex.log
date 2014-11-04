@@ -4,8 +4,8 @@ This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012)
  restricted \write18 enabled.
 entering extended mode
 
-(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpHujko3/Rd2pdfcfd6
-1d6adc7f/Rd2.tex
+(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpS2O2YE/Rd2pdf3b1b
+5c89898a/Rd2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -121,24 +121,24 @@ i4/m/n/10 http : / / link . springer . com / chapter /
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ts1ptm.fd) [4] [5]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
-Underfull \hbox (badness 2253) in paragraph at lines 298--298
+Underfull \hbox (badness 2253) in paragraph at lines 301--301
 []\T1/ptm/m/it/10 Class \T1/fi4/m/n/10 "ConformalClassification"\T1/ptm/m/it/10
  : Con-for-mal Pre-dic-tion for
-[6] (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [7]
-Overfull \hbox (14.28088pt too wide) in paragraph at lines 430--430
+[6] (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [7] [8]
+Overfull \hbox (14.28088pt too wide) in paragraph at lines 433--433
  []\T1/fi4/m/n/9 tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, powe
 r.to=-6, power.by=1, base=2),[] 
-[8]
-Overfull \hbox (27.78088pt too wide) in paragraph at lines 446--446
+
+Overfull \hbox (27.78088pt too wide) in paragraph at lines 450--450
  []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=error_model,Co
 nformityMeasure=StandardMeasure)[] 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [9]
-Overfull \hbox (3.86938pt too wide) in paragraph at lines 484--485
+Overfull \hbox (3.86938pt too wide) in paragraph at lines 488--489
 []\T1/ptm/m/n/10 this method cal-cu-lates the vec-
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [10]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [11]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
-Overfull \hbox (9.91612pt too wide) in paragraph at lines 618--621
+Overfull \hbox (9.91612pt too wide) in paragraph at lines 622--625
 []\T1/ptm/m/n/10 This func-tion ex-tracts the cross-validation pre-dic-tions fr
 om a caret model trained with cross-validation.
 [12] (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
@@ -170,7 +170,7 @@ lvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
 usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/
 texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (16 pages, 197982 bytes).
+Output written on Rd2.pdf (16 pages, 197801 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2012] (kpathsea + Thai support).
 Scanning input file ./Rd2.idx....done (46 entries accepted, 0 rejected).
@@ -182,8 +182,8 @@ This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012)
  restricted \write18 enabled.
 entering extended mode
 
-(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpHujko3/Rd2pdfcfd6
-1d6adc7f/Rd2.tex
+(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpS2O2YE/Rd2pdf3b1b
+5c89898a/Rd2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -300,32 +300,32 @@ i4/m/n/10 http : / / link . springer . com / chapter /
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [4]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ts1ptm.fd) [5]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
-Underfull \hbox (badness 2253) in paragraph at lines 298--298
+Underfull \hbox (badness 2253) in paragraph at lines 301--301
 []\T1/ptm/m/it/10 Class \T1/fi4/m/n/10 "ConformalClassification"\T1/ptm/m/it/10
  : Con-for-mal Pre-dic-tion for
 [6] (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [7] [8]
-Overfull \hbox (14.28088pt too wide) in paragraph at lines 430--430
+Overfull \hbox (14.28088pt too wide) in paragraph at lines 433--433
  []\T1/fi4/m/n/9 tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, powe
 r.to=-6, power.by=1, base=2),[] 
 
-Overfull \hbox (27.78088pt too wide) in paragraph at lines 446--446
+Overfull \hbox (27.78088pt too wide) in paragraph at lines 450--450
  []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=error_model,Co
 nformityMeasure=StandardMeasure)[] 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [9]
-Overfull \hbox (3.86938pt too wide) in paragraph at lines 484--485
+Overfull \hbox (3.86938pt too wide) in paragraph at lines 488--489
 []\T1/ptm/m/n/10 this method cal-cu-lates the vec-
 [10] (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [11]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
-Overfull \hbox (9.91612pt too wide) in paragraph at lines 618--621
+Overfull \hbox (9.91612pt too wide) in paragraph at lines 622--625
 []\T1/ptm/m/n/10 This func-tion ex-tracts the cross-validation pre-dic-tions fr
 om a caret model trained with cross-validation.
 [12] (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [13]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [14]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [15]
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) (./Rd2.ind
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [15] (./Rd2.ind
 [16]
 
 LaTeX Font Warning: Font shape `T1/fi4/m/it' undefined
@@ -356,11 +356,11 @@ lvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
 usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/
 texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (17 pages, 202641 bytes).
+Output written on Rd2.pdf (17 pages, 202454 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2012] (kpathsea + Thai support).
 Scanning input file ./Rd2.idx....done (46 entries accepted, 0 rejected).
-Sorting entries....done (296 comparisons).
+Sorting entries....done (300 comparisons).
 Generating output file ./Rd2.ind....done (51 lines written, 4 warnings).
 Output written in ./Rd2.ind.
 Transcript written in ./Rd2.ilg.
@@ -368,8 +368,8 @@ This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012)
  restricted \write18 enabled.
 entering extended mode
 
-(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpHujko3/Rd2pdfcfd6
-1d6adc7f/Rd2.tex
+(/private/var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T/RtmpS2O2YE/Rd2pdf3b1b
+5c89898a/Rd2.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -486,32 +486,32 @@ i4/m/n/10 http : / / link . springer . com / chapter /
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [4]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ts1ptm.fd) [5]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
-Underfull \hbox (badness 2253) in paragraph at lines 298--298
+Underfull \hbox (badness 2253) in paragraph at lines 301--301
 []\T1/ptm/m/it/10 Class \T1/fi4/m/n/10 "ConformalClassification"\T1/ptm/m/it/10
  : Con-for-mal Pre-dic-tion for
 [6] (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [7] [8]
-Overfull \hbox (14.28088pt too wide) in paragraph at lines 430--430
+Overfull \hbox (14.28088pt too wide) in paragraph at lines 433--433
  []\T1/fi4/m/n/9 tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, powe
 r.to=-6, power.by=1, base=2),[] 
 
-Overfull \hbox (27.78088pt too wide) in paragraph at lines 446--446
+Overfull \hbox (27.78088pt too wide) in paragraph at lines 450--450
  []\T1/fi4/m/n/9 example$CalculateAlphas(model=model,error_model=error_model,Co
 nformityMeasure=StandardMeasure)[] 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [9]
-Overfull \hbox (3.86938pt too wide) in paragraph at lines 484--485
+Overfull \hbox (3.86938pt too wide) in paragraph at lines 488--489
 []\T1/ptm/m/n/10 this method cal-cu-lates the vec-
 [10] (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [11]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
-Overfull \hbox (9.91612pt too wide) in paragraph at lines 618--621
+Overfull \hbox (9.91612pt too wide) in paragraph at lines 622--625
 []\T1/ptm/m/n/10 This func-tion ex-tracts the cross-validation pre-dic-tions fr
 om a caret model trained with cross-validation.
 [12] (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [13]
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [14]
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def)
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [15]
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) (./Rd2.ind
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def) [15] (./Rd2.ind
 [16]
 
 LaTeX Font Warning: Font shape `T1/fi4/m/it' undefined
@@ -537,8 +537,8 @@ lvetic/uhvr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
 usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/
 texlive/2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Rd2.pdf (17 pages, 202951 bytes).
+Output written on Rd2.pdf (17 pages, 202693 bytes).
 Transcript written on Rd2.log.
 Saving output to 'conformal-manual.pdf' ...
 Done
-You may want to clean up by 'rm -rf /var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T//RtmpHujko3/Rd2pdfcfd61d6adc7f'
+You may want to clean up by 'rm -rf /var/folders/8g/302kgkbs2r13whc7g1djd1pw0000gn/T//RtmpS2O2YE/Rd2pdf3b1b5c89898a'

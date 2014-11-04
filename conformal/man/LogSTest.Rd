@@ -5,7 +5,6 @@
 \description{
 Solubility values for the datapoints in the test set.
 }
-\usage{data(LogSTest)}
 \details{
 
 LogSTest is a vector containing the solubility values for the datapoints in the test set (30\% of the \code{\link{LogS}} data).
