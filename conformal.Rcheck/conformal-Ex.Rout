@@ -1,6 +1,6 @@
 
-R version 3.0.1 (2013-05-16) -- "Good Sport"
-Copyright (C) 2013 The R Foundation for Statistical Computing
+R version 3.1.2 (2014-10-31) -- "Pumpkin Helmet"
+Copyright (C) 2014 The R Foundation for Statistical Computing
 Platform: x86_64-apple-darwin10.8.0 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -20,6 +20,18 @@ Type 'q()' to quit R.
 > pkgname <- "conformal"
 > source(file.path(R.home("share"), "R", "examples-header.R"))
 > options(warn = 1)
+> base::assign(".ExTimings", "conformal-Ex.timings", pos = 'CheckExEnv')
+> base::cat("name\tuser\tsystem\telapsed\n", file=base::get(".ExTimings", pos = 'CheckExEnv'))
+> base::assign(".format_ptime",
++ function(x) {
++   if(!is.na(x[4L])) x[1L] <- x[1L] + x[4L]
++   if(!is.na(x[5L])) x[2L] <- x[2L] + x[5L]
++   options(OutDec = '.')
++   format(x[1L:3L], digits = 7L)
++ },
++ pos = 'CheckExEnv')
+> 
+> ### * </HEADER>
 > library('conformal')
 Loading required package: caret
 Loading required package: lattice
@@ -37,6 +49,7 @@ Loading required package: e1071
 > 
 > flush(stderr()); flush(stdout())
 > 
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 > ### Name: ConformalClassification
 > ### Title: Class Conformal Prediction for Classification
 > ### Aliases: ConformalClassification
@@ -73,18 +86,38 @@ Class "refObject", by class "envRefClass", distance 3
 > LogSTrain <- factor(LogSTrain)
 > LogSTest <- factor(LogSTest)
 > 
+> # Remove part of the data to allow for quick training
+> LogSTrain <- LogSTrain[1:20]
+> LogSTest <- LogSTest[1:20]
+> LogSDescsTrain <- LogSDescsTrain[1:20,]
+> LogSDescsTest <- LogSDescsTest[1:20,]
+> 
 > algorithm <- "rf"
 > 
 > trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)
 > set.seed(3)
 > 
 > #number of trees
-> nb_trees = 100
+> nb_trees <- 100
 > model <- train(LogSDescsTrain, LogSTrain, 
 +          algorithm,type="classification", 
 +          trControl=trControl,predict.all=TRUE,
 +          keep.forest=TRUE,norm.votes=TRUE,
 +          ntree=nb_trees)
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1: mtry=  2 Error in randomForest.default(x, y, mtry = param$mtry, ...) : 
+  Need at least two classes to do classification.
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1: mtry=106 Error in randomForest.default(x, y, mtry = param$mtry, ...) : 
+  Need at least two classes to do classification.
+
+Warning in eval(expr, envir, enclos) :
+  model fit failed for Fold1: mtry=211 Error in randomForest.default(x, y, mtry = param$mtry, ...) : 
+  Need at least two classes to do classification.
+
+Warning in nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
+  There were missing values in resampled performance measures.
 > 
 > 
 > # Instantiate the class and get the p.values
@@ -98,662 +131,63 @@ Conformal Prediction Class for Classification Instantiated
 
 > # we get the p.values:
 > example$p.values$P.values
-                 1         2
-427.1   0.39766537 0.6000000
-598.1   0.51595331 0.0000000
-919.1   0.51595331 0.4840467
-1456.1  0.34708171 0.6529183
-324.1   0.51595331 0.0000000
-1439.1  0.42412451 0.5758755
-1512.1  0.51595331 0.0000000
-1057.1  0.51595331 0.0000000
-1006.1  0.51595331 0.0000000
-99.1    0.51595331 0.0000000
-329.1   0.51439689 0.4848249
-282.1   0.51595331 0.0000000
-1096.1  0.51595331 0.0000000
-612.1   0.51595331 0.0000000
-1226.1  0.43579767 0.5642023
-792.NA  0.00000000 0.9712062
-1142.1  0.11439689 0.8848249
-1577.1  0.06225681 0.9377432
-604.1   0.51595331 0.0000000
-1234.1  0.37976654 0.6202335
-1483.1  0.51595331 0.0000000
-337.1   0.51595331 0.0000000
-1033.1  0.04280156 0.9571984
-199.1   0.19610895 0.8038911
-423.1   0.51595331 0.0000000
-611.1   0.51439689 0.4848249
-22.1    0.51595331 0.0000000
-1588.1  0.51595331 0.0000000
-1373.1  0.51595331 0.0000000
-537.1   0.29416342 0.7058366
-760.1   0.34708171 0.6529183
-945.1   0.51595331 0.0000000
-777.1   0.19377432 0.8054475
-293.1   0.51595331 0.4840467
-1301.1  0.51595331 0.0000000
-1051.1  0.44202335 0.5571984
-1247.1  0.51439689 0.4848249
-170.1   0.51595331 0.0000000
-1135.1  0.35175097 0.6474708
-645.1   0.34708171 0.6529183
-1286.1  0.51595331 0.0000000
-1013.1  0.51595331 0.0000000
-1225.1  0.31284047 0.6871595
-865.1   0.51595331 0.4840467
-828.1   0.51595331 0.0000000
-1233.1  0.21167315 0.7883268
-37.1    0.51595331 0.0000000
-745.1   0.51439689 0.4848249
-1141.1  0.12295720 0.8770428
-1079.1  0.26692607 0.7330739
-744.1   0.51595331 0.0000000
-1340.1  0.06225681 0.9377432
-681.1   0.44980545 0.5501946
-381.1   0.11128405 0.8887160
-110.1   0.37042802 0.6295720
-155.1   0.51439689 0.4848249
-491.1   0.13929961 0.8607004
-804.1   0.11439689 0.8848249
-1025.1  0.34708171 0.6529183
-630.1   0.39066148 0.6093385
-1412.1  0.51595331 0.0000000
-454.1   0.24591440 0.7540856
-709.1   0.51595331 0.0000000
-513.1   0.39766537 0.6000000
-1004.1  0.51595331 0.0000000
-398.1   0.23268482 0.7673152
-737.1   0.51439689 0.4848249
-1180.1  0.08015564 0.9198444
-130.1   0.29416342 0.7058366
-1346.1  0.31673152 0.6832685
-521.1   0.51595331 0.0000000
-1289.1  0.51595331 0.0000000
-532.1   0.33307393 0.6669261
-512.1   0.51595331 0.0000000
-730.1   0.51595331 0.0000000
-1366.1  0.51595331 0.4840467
-1323.1  0.41089494 0.5891051
-597.1   0.51595331 0.0000000
-1188.NA 0.00000000 0.9712062
-1467.1  0.51595331 0.0000000
-664.1   0.51595331 0.0000000
-1087.1  0.51595331 0.4840467
-610.1   0.51595331 0.0000000
-496.1   0.51595331 0.0000000
-1153.1  0.37042802 0.6295720
-309.1   0.51595331 0.4840467
-1081.1  0.51595331 0.0000000
-185.1   0.28482490 0.7143969
-373.1   0.51595331 0.0000000
-218.1   0.12295720 0.8770428
-364.1   0.51595331 0.0000000
-90.1    0.51595331 0.0000000
-973.1   0.23268482 0.7673152
-1326.1  0.51595331 0.0000000
-1178.1  0.44202335 0.5571984
-1205.1  0.41089494 0.5891051
-688.1   0.25680934 0.7431907
-619.1   0.41089494 0.5891051
-1223.1  0.44202335 0.5571984
-912.1   0.46225681 0.5377432
-987.NA  0.00000000 0.9712062
-1534.1  0.44980545 0.5501946
-407.1   0.51595331 0.4840467
-1493.1  0.51595331 0.0000000
-952.1   0.08638132 0.9128405
-321.1   0.51595331 0.0000000
-195.1   0.16031128 0.8396887
-717.1   0.42412451 0.5758755
-1385.1  0.37976654 0.6202335
-897.1   0.51595331 0.0000000
-1461.1  0.25680934 0.7431907
-1095.1  0.51595331 0.0000000
-533.1   0.44202335 0.5571984
-1567.1  0.51595331 0.0000000
-222.1   0.51595331 0.4840467
-20.1    0.51595331 0.0000000
-1067.1  0.51595331 0.0000000
-154.1   0.43579767 0.5642023
-665.1   0.51595331 0.0000000
-1502.1  0.51595331 0.0000000
-1474.NA 0.00000000 0.9712062
-736.1   0.51439689 0.4848249
-719.1   0.29416342 0.7058366
-258.1   0.13929961 0.8607004
-1119.1  0.11128405 0.8887160
-673.1   0.51595331 0.0000000
-757.1   0.51595331 0.4840467
-307.1   0.51595331 0.0000000
-338.1   0.51595331 0.0000000
-880.1   0.06225681 0.9377432
-849.1   0.10194553 0.8980545
-114.1   0.29649805 0.7035019
-53.1    0.17743191 0.8225681
-947.1   0.19766537 0.8023346
-1367.1  0.51595331 0.0000000
-1477.1  0.39766537 0.6000000
-825.1   0.51595331 0.0000000
-773.1   0.16887160 0.8311284
-1447.1  0.18521401 0.8140078
-1559.1  0.30972763 0.6902724
-1001.1  0.51595331 0.0000000
-882.1   0.32217899 0.6778210
-350.1   0.51595331 0.0000000
-378.1   0.51595331 0.0000000
-1490.1  0.51595331 0.0000000
-662.1   0.51595331 0.0000000
-256.1   0.05291829 0.9455253
-1090.1  0.51595331 0.4840467
-1489.1  0.44980545 0.5501946
-1260.1  0.51595331 0.0000000
-895.NA  0.00000000 0.9712062
-811.NA  0.00000000 0.9712062
-479.1   0.42412451 0.5758755
-659.1   0.46225681 0.5377432
-727.1   0.46225681 0.5377432
-263.1   0.51595331 0.0000000
-768.1   0.14552529 0.8544747
-1552.1  0.37976654 0.6202335
-403.1   0.51595331 0.0000000
-308.1   0.51595331 0.0000000
-412.1   0.51595331 0.0000000
-1294.1  0.37042802 0.6295720
-1503.1  0.51595331 0.0000000
-1126.1  0.36031128 0.6396887
-1270.1  0.32217899 0.6778210
-596.1   0.51595331 0.0000000
-92.1    0.51595331 0.0000000
-483.1   0.51595331 0.0000000
-1041.1  0.51595331 0.0000000
-486.1   0.51595331 0.0000000
-906.1   0.02879377 0.9712062
-1207.1  0.18832685 0.8116732
-1228.1  0.37976654 0.6202335
-561.1   0.51595331 0.0000000
-545.1   0.51595331 0.0000000
-1282.1  0.51595331 0.0000000
-922.1   0.17743191 0.8225681
-1060.1  0.51595331 0.0000000
-1563.1  0.11128405 0.8887160
-1535.1  0.11128405 0.8887160
-419.1   0.11128405 0.8887160
-273.1   0.51595331 0.0000000
-1263.1  0.51595331 0.0000000
-1499.1  0.51595331 0.4840467
-1248.1  0.51595331 0.0000000
-269.1   0.16186770 0.8381323
-1077.1  0.21789883 0.7821012
-1029.1  0.30194553 0.6926070
-1339.1  0.06770428 0.9322957
-1574.1  0.44980545 0.5501946
-1008.1  0.19922179 0.8007782
-551.1   0.51595331 0.0000000
-143.1   0.33307393 0.6669261
-1311.1  0.51595331 0.4840467
-400.1   0.51595331 0.0000000
-834.1   0.51439689 0.4848249
-156.1   0.51595331 0.0000000
-1185.1  0.42412451 0.5758755
-448.1   0.29649805 0.7035019
-1102.1  0.28482490 0.7143969
-377.1   0.51595331 0.0000000
-1468.1  0.51595331 0.0000000
-726.1   0.51595331 0.0000000
-1463.NA 0.00000000 0.9712062
-254.1   0.02879377 0.9712062
-1452.1  0.06770428 0.9322957
-788.1   0.35175097 0.6474708
-181.1   0.51439689 0.4848249
-359.1   0.51595331 0.0000000
-1003.1  0.51595331 0.0000000
-1343.1  0.06225681 0.9377432
-140.1   0.33307393 0.6669261
-1064.1  0.44202335 0.5571984
-1321.NA 0.00000000 0.9712062
-1140.1  0.14552529 0.8544747
-429.1   0.37042802 0.6295720
-903.1   0.21167315 0.7883268
-1325.1  0.51595331 0.4840467
-1324.1  0.51595331 0.4840467
-472.1   0.44202335 0.5571984
-1516.1  0.20233463 0.7976654
-230.1   0.51595331 0.0000000
-446.1   0.29416342 0.7058366
-706.1   0.51595331 0.0000000
-1277.NA 0.00000000 0.9712062
-1383.1  0.51595331 0.0000000
-356.1   0.51595331 0.0000000
-65.1    0.51595331 0.0000000
-576.1   0.51595331 0.0000000
-1176.1  0.44202335 0.5571984
-478.1   0.51595331 0.0000000
-1399.1  0.37976654 0.6202335
-515.1   0.51595331 0.0000000
-867.1   0.02879377 0.9712062
-536.1   0.51595331 0.4840467
-946.1   0.51595331 0.0000000
-1575.1  0.13540856 0.8645914
-1576.1  0.32607004 0.6739300
-588.1   0.02879377 0.9712062
-1509.1  0.51595331 0.0000000
-1426.1  0.51595331 0.0000000
-790.NA  0.00000000 0.9712062
-1242.1  0.41867704 0.5813230
-1500.1  0.51439689 0.4848249
-566.1   0.51595331 0.0000000
-288.1   0.51595331 0.0000000
-584.1   0.51595331 0.0000000
-1375.1  0.51595331 0.0000000
-625.1   0.11128405 0.8887160
-1280.1  0.51595331 0.0000000
-1034.1  0.51595331 0.0000000
-1265.NA 0.00000000 0.9712062
-638.1   0.44202335 0.5571984
-817.1   0.07392996 0.9252918
-656.1   0.51595331 0.0000000
-147.1   0.43579767 0.5642023
-335.1   0.07392996 0.9252918
-1481.1  0.44980545 0.5501946
-503.NA  0.00000000 0.9712062
-1457.1  0.36031128 0.6396887
-1381.1  0.51595331 0.4840467
-1606.1  0.51595331 0.0000000
-374.1   0.51595331 0.0000000
-1058.1  0.51595331 0.0000000
-943.1   0.51595331 0.0000000
-1492.1  0.16031128 0.8396887
-87.1    0.51595331 0.0000000
-1011.1  0.51595331 0.0000000
-831.1   0.21167315 0.7883268
-227.1   0.51595331 0.0000000
-84.1    0.51595331 0.0000000
-146.1   0.30194553 0.6926070
-510.1   0.51595331 0.0000000
-226.1   0.51595331 0.0000000
-1541.1  0.51439689 0.4848249
-1460.1  0.51595331 0.0000000
-343.1   0.08015564 0.9198444
-241.1   0.51595331 0.0000000
-634.1   0.33307393 0.6669261
-1023.1  0.51595331 0.0000000
-1560.1  0.33852140 0.6614786
-699.1   0.36031128 0.6396887
-1166.NA 0.00000000 0.9712062
-494.1   0.51595331 0.0000000
-64.1    0.51595331 0.0000000
-184.1   0.28482490 0.7143969
-425.1   0.51595331 0.0000000
-205.1   0.37976654 0.6202335
-175.1   0.16186770 0.8381323
-292.1   0.51595331 0.0000000
-298.1   0.51595331 0.0000000
-173.1   0.51595331 0.0000000
-1290.1  0.51595331 0.0000000
-430.1   0.51595331 0.0000000
-666.1   0.39766537 0.6000000
-894.1   0.11439689 0.8848249
-1538.1  0.19066148 0.8093385
-1410.NA 0.00000000 0.9712062
-66.1    0.21789883 0.7774319
-1215.1  0.29416342 0.7058366
-1471.1  0.26070039 0.7392996
-124.1   0.29961089 0.7003891
-643.1   0.19377432 0.8054475
-602.1   0.51595331 0.0000000
-489.1   0.51595331 0.0000000
-1314.1  0.28015564 0.7198444
-1498.1  0.29961089 0.7003891
-1599.1  0.51595331 0.0000000
-89.1    0.51595331 0.4840467
-520.1   0.51595331 0.0000000
-183.1   0.51595331 0.0000000
-251.1   0.51595331 0.0000000
-1089.1  0.51595331 0.0000000
-931.NA  0.00000000 0.9712062
-346.1   0.51595331 0.0000000
-640.1   0.51595331 0.0000000
-108.1   0.32217899 0.6778210
-457.1   0.41089494 0.5891051
-1249.1  0.51595331 0.0000000
-805.1   0.06225681 0.9377432
-855.1   0.43579767 0.5642023
+                1         2
+427.1  0.00000000 1.0000000
+598.1  0.36842105 0.0000000
+919.1  0.31578947 0.6842105
+1456.1 0.31578947 0.6842105
+324.1  0.31578947 0.6842105
+1439.1 0.31578947 0.6842105
+1512.1 0.36842105 0.6315789
+1057.1 0.31578947 0.6842105
+1006.1 0.31578947 0.6842105
+99.1   0.36842105 0.0000000
+329.1  0.31578947 0.6842105
+282.1  0.36842105 0.6315789
+1096.1 0.31578947 0.6842105
+612.1  0.36842105 0.0000000
+1226.1 0.31578947 0.6842105
+792.1  0.00000000 1.0000000
+1142.1 0.05263158 0.9473684
+1577.1 0.00000000 1.0000000
+604.1  0.36842105 0.0000000
+1234.1 0.31578947 0.6842105
 > # we get the significance of these p.values.
 > example$p.values$Significance_p.values
-        1 2
-427.1   1 1
-598.1   1 0
-919.1   1 1
-1456.1  1 1
-324.1   1 0
-1439.1  1 1
-1512.1  1 0
-1057.1  1 0
-1006.1  1 0
-99.1    1 0
-329.1   1 1
-282.1   1 0
-1096.1  1 0
-612.1   1 0
-1226.1  1 1
-792.NA  0 1
-1142.1  0 1
-1577.1  0 1
-604.1   1 0
-1234.1  1 1
-1483.1  1 0
-337.1   1 0
-1033.1  0 1
-199.1   0 1
-423.1   1 0
-611.1   1 1
-22.1    1 0
-1588.1  1 0
-1373.1  1 0
-537.1   1 1
-760.1   1 1
-945.1   1 0
-777.1   0 1
-293.1   1 1
-1301.1  1 0
-1051.1  1 1
-1247.1  1 1
-170.1   1 0
-1135.1  1 1
-645.1   1 1
-1286.1  1 0
-1013.1  1 0
-1225.1  1 1
-865.1   1 1
-828.1   1 0
-1233.1  1 1
-37.1    1 0
-745.1   1 1
-1141.1  0 1
-1079.1  1 1
-744.1   1 0
-1340.1  0 1
-681.1   1 1
-381.1   0 1
-110.1   1 1
-155.1   1 1
-491.1   0 1
-804.1   0 1
-1025.1  1 1
-630.1   1 1
-1412.1  1 0
-454.1   1 1
-709.1   1 0
-513.1   1 1
-1004.1  1 0
-398.1   1 1
-737.1   1 1
-1180.1  0 1
-130.1   1 1
-1346.1  1 1
-521.1   1 0
-1289.1  1 0
-532.1   1 1
-512.1   1 0
-730.1   1 0
-1366.1  1 1
-1323.1  1 1
-597.1   1 0
-1188.NA 0 1
-1467.1  1 0
-664.1   1 0
-1087.1  1 1
-610.1   1 0
-496.1   1 0
-1153.1  1 1
-309.1   1 1
-1081.1  1 0
-185.1   1 1
-373.1   1 0
-218.1   0 1
-364.1   1 0
-90.1    1 0
-973.1   1 1
-1326.1  1 0
-1178.1  1 1
-1205.1  1 1
-688.1   1 1
-619.1   1 1
-1223.1  1 1
-912.1   1 1
-987.NA  0 1
-1534.1  1 1
-407.1   1 1
-1493.1  1 0
-952.1   0 1
-321.1   1 0
-195.1   0 1
-717.1   1 1
-1385.1  1 1
-897.1   1 0
-1461.1  1 1
-1095.1  1 0
-533.1   1 1
-1567.1  1 0
-222.1   1 1
-20.1    1 0
-1067.1  1 0
-154.1   1 1
-665.1   1 0
-1502.1  1 0
-1474.NA 0 1
-736.1   1 1
-719.1   1 1
-258.1   0 1
-1119.1  0 1
-673.1   1 0
-757.1   1 1
-307.1   1 0
-338.1   1 0
-880.1   0 1
-849.1   0 1
-114.1   1 1
-53.1    0 1
-947.1   0 1
-1367.1  1 0
-1477.1  1 1
-825.1   1 0
-773.1   0 1
-1447.1  0 1
-1559.1  1 1
-1001.1  1 0
-882.1   1 1
-350.1   1 0
-378.1   1 0
-1490.1  1 0
-662.1   1 0
-256.1   0 1
-1090.1  1 1
-1489.1  1 1
-1260.1  1 0
-895.NA  0 1
-811.NA  0 1
-479.1   1 1
-659.1   1 1
-727.1   1 1
-263.1   1 0
-768.1   0 1
-1552.1  1 1
-403.1   1 0
-308.1   1 0
-412.1   1 0
-1294.1  1 1
-1503.1  1 0
-1126.1  1 1
-1270.1  1 1
-596.1   1 0
-92.1    1 0
-483.1   1 0
-1041.1  1 0
-486.1   1 0
-906.1   0 1
-1207.1  0 1
-1228.1  1 1
-561.1   1 0
-545.1   1 0
-1282.1  1 0
-922.1   0 1
-1060.1  1 0
-1563.1  0 1
-1535.1  0 1
-419.1   0 1
-273.1   1 0
-1263.1  1 0
-1499.1  1 1
-1248.1  1 0
-269.1   0 1
-1077.1  1 1
-1029.1  1 1
-1339.1  0 1
-1574.1  1 1
-1008.1  0 1
-551.1   1 0
-143.1   1 1
-1311.1  1 1
-400.1   1 0
-834.1   1 1
-156.1   1 0
-1185.1  1 1
-448.1   1 1
-1102.1  1 1
-377.1   1 0
-1468.1  1 0
-726.1   1 0
-1463.NA 0 1
-254.1   0 1
-1452.1  0 1
-788.1   1 1
-181.1   1 1
-359.1   1 0
-1003.1  1 0
-1343.1  0 1
-140.1   1 1
-1064.1  1 1
-1321.NA 0 1
-1140.1  0 1
-429.1   1 1
-903.1   1 1
-1325.1  1 1
-1324.1  1 1
-472.1   1 1
-1516.1  1 1
-230.1   1 0
-446.1   1 1
-706.1   1 0
-1277.NA 0 1
-1383.1  1 0
-356.1   1 0
-65.1    1 0
-576.1   1 0
-1176.1  1 1
-478.1   1 0
-1399.1  1 1
-515.1   1 0
-867.1   0 1
-536.1   1 1
-946.1   1 0
-1575.1  0 1
-1576.1  1 1
-588.1   0 1
-1509.1  1 0
-1426.1  1 0
-790.NA  0 1
-1242.1  1 1
-1500.1  1 1
-566.1   1 0
-288.1   1 0
-584.1   1 0
-1375.1  1 0
-625.1   0 1
-1280.1  1 0
-1034.1  1 0
-1265.NA 0 1
-638.1   1 1
-817.1   0 1
-656.1   1 0
-147.1   1 1
-335.1   0 1
-1481.1  1 1
-503.NA  0 1
-1457.1  1 1
-1381.1  1 1
-1606.1  1 0
-374.1   1 0
-1058.1  1 0
-943.1   1 0
-1492.1  0 1
-87.1    1 0
-1011.1  1 0
-831.1   1 1
-227.1   1 0
-84.1    1 0
-146.1   1 1
-510.1   1 0
-226.1   1 0
-1541.1  1 1
-1460.1  1 0
-343.1   0 1
-241.1   1 0
-634.1   1 1
-1023.1  1 0
-1560.1  1 1
-699.1   1 1
-1166.NA 0 1
-494.1   1 0
-64.1    1 0
-184.1   1 1
-425.1   1 0
-205.1   1 1
-175.1   0 1
-292.1   1 0
-298.1   1 0
-173.1   1 0
-1290.1  1 0
-430.1   1 0
-666.1   1 1
-894.1   0 1
-1538.1  0 1
-1410.NA 0 1
-66.1    1 1
-1215.1  1 1
-1471.1  1 1
-124.1   1 1
-643.1   0 1
-602.1   1 0
-489.1   1 0
-1314.1  1 1
-1498.1  1 1
-1599.1  1 0
-89.1    1 1
-520.1   1 0
-183.1   1 0
-251.1   1 0
-1089.1  1 0
-931.NA  0 1
-346.1   1 0
-640.1   1 0
-108.1   1 1
-457.1   1 1
-1249.1  1 0
-805.1   0 1
-855.1   1 1
+       1 2
+427.1  0 1
+598.1  1 0
+919.1  1 1
+1456.1 1 1
+324.1  1 1
+1439.1 1 1
+1512.1 1 1
+1057.1 1 1
+1006.1 1 1
+99.1   1 0
+329.1  1 1
+282.1  1 1
+1096.1 1 1
+612.1  1 0
+1226.1 1 1
+792.1  0 1
+1142.1 0 1
+1577.1 0 1
+604.1  1 0
+1234.1 1 1
 > 
 > 
 > 
 > 
+> base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
+> base::cat("ConformalClassification", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 > cleanEx()
 > nameEx("ConformalRegression")
 > ### * ConformalRegression
 > 
 > flush(stderr()); flush(stdout())
 > 
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 > ### Name: ConformalRegression
 > ### Title: Class ConformalRegression: Conformal Prediction for Regression
 > ### Aliases: ConformalRegression
@@ -785,16 +219,67 @@ Class "refObject", by class "envRefClass", distance 3
 > 
 > data(LogS)
 > 
+> # Remove part of the data to allow for quick training
+> LogSTrain <- LogSTrain[1:20]
+> LogSTest <- LogSTest[1:20]
+> LogSDescsTrain <- LogSDescsTrain[1:20,]
+> LogSDescsTest <- LogSDescsTest[1:20,]
+> 
 > algorithm <- "svmRadial"
-> tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, power.to=-6, power.by=1, base=2), 
-+                          .C = expGrid(power.from=4, power.to=10, power.by=2, base=2))
+> tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, power.to=-6, power.by=2, base=2), 
++                          .C = c(1,10,100))
 > trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)
-> set.seed(3)
+> set.seed(1)
 > model <- train(LogSDescsTrain, LogSTrain, algorithm, 
 +                tuneGrid=tune.grid, 
 +                trControl=trControl)
 Loading required package: kernlab
-Warning: package 'kernlab' was built under R version 3.0.2
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
 > 
 > 
 > # Train an error model
@@ -802,6 +287,23 @@ Warning: package 'kernlab' was built under R version 3.0.2
 +                           savePredictions=TRUE,algorithm=algorithm,
 +                           trControl=trControl, 
 +                           tune.grid=tune.grid)
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
+Warning in .local(x, ...) : Variable(s) `' constant. Cannot scale data.
 > 
 > # Instantiate the class and get the confidence intervals
 > example <- ConformalRegression$new()
@@ -819,6 +321,8 @@ Conformal Prediction Class for Regression Instantiated
 > 
 > 
 > 
+> base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
+> base::cat("ConformalRegression", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 > cleanEx()
 
 detaching 'package:kernlab'
@@ -828,6 +332,7 @@ detaching 'package:kernlab'
 > 
 > flush(stderr()); flush(stdout())
 > 
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 > ### Name: LogS
 > ### Title: Small Molecule Solubility (LogS) Data
 > ### Aliases: LogS
@@ -839,12 +344,15 @@ detaching 'package:kernlab'
 > 
 > 
 > 
+> base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
+> base::cat("LogS", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 > cleanEx()
 > nameEx("expGrid")
 > ### * expGrid
 > 
 > flush(stderr()); flush(stdout())
 > 
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
 > ### Name: expGrid
 > ### Title: Exponential Grid Definition
 > ### Aliases: expGrid
@@ -856,11 +364,13 @@ detaching 'package:kernlab'
 > 
 > 
 > 
+> base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
+> base::cat("expGrid", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 > ### * <FOOTER>
 > ###
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  135.238 4.281 139.524 0 0 
+Time elapsed:  6.909 0.136 7.069 0 0 
 > grDevices::dev.off()
 null device 
           1 

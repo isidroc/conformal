@@ -1,15 +1,15 @@
 Package: conformal
 Type: Package
-Title: Conformal, an R package to calculate prediction errors in the
-        conformal prediction framework
+Title: Conformal Prediction for Regression and Classification
 Version: 0.1
 Date: 04/10/2014
 Author: Isidro Cortes <isidrolauscher@gmail.com>
 Maintainer: Isidro Cortes <isidrolauscher@gmail.com>
 Depends: R (>= 2.12.0), caret, ggplot2, grid, randomForest, e1071,
         methods
-Description: implementation of conformal prediction using caret models for classification and regression.
+Suggests: kernlab
+Description: Implementation of conformal prediction using caret models for classification and regression
 License: GPL
 LazyLoad: yes
 Packaged: 2014-10-04 13:27:39 UTC; Isidro Cortes Ciriano
-Built: R 3.0.1; ; 2014-11-04 13:24:43 UTC; unix
+Built: R 3.1.2; ; 2015-01-20 23:47:26 UTC; unix

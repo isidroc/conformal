@@ -5,3 +5,9 @@ import(caret)
 import(ggplot2)
 import(grid)
 import(randomForest)
+import(e1071)
+import(methods)
+
+
+
+

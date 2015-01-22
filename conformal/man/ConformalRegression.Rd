@@ -78,11 +78,17 @@ showClass("ConformalRegression")
 
 data(LogS)
 
+# Remove part of the data to allow for quick training
+LogSTrain <- LogSTrain[1:20]
+LogSTest <- LogSTest[1:20]
+LogSDescsTrain <- LogSDescsTrain[1:20,]
+LogSDescsTest <- LogSDescsTest[1:20,]
+
 algorithm <- "svmRadial"
-tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, power.to=-6, power.by=1, base=2), 
-                         .C = expGrid(power.from=4, power.to=10, power.by=2, base=2))
+tune.grid <- expand.grid(.sigma = expGrid(power.from=-10, power.to=-6, power.by=2, base=2), 
+                         .C = c(1,10,100))
 trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)
-set.seed(3)
+set.seed(1)
 model <- train(LogSDescsTrain, LogSTrain, algorithm, 
                tuneGrid=tune.grid, 
                trControl=trControl)

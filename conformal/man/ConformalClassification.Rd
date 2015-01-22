@@ -76,13 +76,19 @@ LogSTest[LogSTest <= -4] <- 2
 LogSTrain <- factor(LogSTrain)
 LogSTest <- factor(LogSTest)
 
+# Remove part of the data to allow for quick training
+LogSTrain <- LogSTrain[1:20]
+LogSTest <- LogSTest[1:20]
+LogSDescsTrain <- LogSDescsTrain[1:20,]
+LogSDescsTest <- LogSDescsTest[1:20,]
+
 algorithm <- "rf"
 
 trControl <- trainControl(method = "cv",  number=5,savePredictions=TRUE)
 set.seed(3)
 
 #number of trees
-nb_trees = 100
+nb_trees <- 100
 model <- train(LogSDescsTrain, LogSTrain, 
          algorithm,type="classification", 
          trControl=trControl,predict.all=TRUE,

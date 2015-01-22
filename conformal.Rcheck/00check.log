@@ -1,5 +1,5 @@
 * using log directory '/Users/icortes/Desktop/conformal/conformal.Rcheck'
-* using R version 3.0.1 (2013-05-16)
+* using R version 3.1.2 (2014-10-31)
 * using platform: x86_64-apple-darwin10.8.0 (64-bit)
 * using session charset: ASCII
 * checking for file 'conformal/DESCRIPTION' ... OK
@@ -31,13 +31,14 @@ New submission
 * checking whether the package can be unloaded cleanly ... OK
 * checking whether the namespace can be loaded with stated dependencies ... OK
 * checking whether the namespace can be unloaded cleanly ... OK
-* checking for unstated dependencies in R code ... OK
+* checking dependencies in R code ... OK
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
 * checking R code for possible problems ... OK
 * checking Rd files ... OK
 * checking Rd metadata ... OK
+* checking Rd line widths ... OK
 * checking Rd cross-references ... OK
 * checking for missing documentation entries ... OK
 * checking for code/documentation mismatches ... OK
@@ -54,8 +55,6 @@ New submission
   LogS.RData   1003Kb    869Kb       xz
 * checking examples ... OK
 * checking PDF version of manual ... OK
+* DONE
 WARNING: There was 1 warning.
 NOTE: There was 1 note.
-See
-  '/Users/icortes/Desktop/conformal/conformal.Rcheck/00check.log'
-for details.

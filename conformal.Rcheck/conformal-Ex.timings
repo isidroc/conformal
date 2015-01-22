@@ -1,0 +1,5 @@
+name	user	system	elapsed
+ConformalClassification	0.980	0.017	1.006	
+ConformalRegression	3.380	0.054	3.444	
+LogS	0.015	0.000	0.016	
+expGrid	0	0	0	
