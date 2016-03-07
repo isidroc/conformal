@@ -22,7 +22,7 @@ https://cran.r-project.org/web/packages/conformal/conformal.pdf
 Classification
 --------
 
-![alt text](https://cdn.rawgit.com/isidroc/conformal/master/conformal/man/figures/classificationScheme.svg "class")
+![alt text2](https://cdn.rawgit.com/isidroc/conformal/master/conformal/man/figures/classificationScheme.svg "class")
 
 Regression
 ---------
