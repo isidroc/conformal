@@ -72,6 +72,11 @@ showClass("ConformalRegression")
 ### Example
 #############################################
 
+## NOTE: the model built in this example has low predictive power as 
+## only little fraction of the training data set is used in order
+## to make the example quick to run.
+## Thus, the example merely intends to illustrate the code. 
+
 # Optional for parallel training
 #library(doMC)
 #registerDoMC(cores=4)

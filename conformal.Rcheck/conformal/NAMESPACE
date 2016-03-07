@@ -1,13 +1,29 @@
 exportPattern(".")
 
 # import the packages specified in: Imports or Depends
-import(caret)
-import(ggplot2)
-import(grid)
-import(randomForest)
+import(grid) 
+#import("randomForest") # Warning (H.W.): replacing previous import by randomForest::margin #when loading conformal. margin and plot.margin excluded from randomForest
+importFrom("randomForest","randomForest")
+importMethodsFrom(randomForest,predict.randomForest)
+importMethodsFrom(randomForest,plot.randomForest)
+importFrom("randomForest",rfcv)
+importFrom("randomForest",rfImpute)
+importFrom("randomForest",rfNews)
+importFrom("randomForest",treesize)
+importFrom("randomForest",tuneRF)
+importFrom("randomForest",varImpPlot)
+importFrom("randomForest",varUsed)
+importFrom("randomForest",classCenter)
+importFrom("randomForest",combine)
+importFrom("randomForest",getTree)
+importFrom("randomForest",grow)
+importFrom("randomForest",importance)
+#importFrom("randomForest",imports85) # this is example data
+importFrom("randomForest",MDSplot)
+importFrom("randomForest",na.roughfix)
+importFrom("randomForest",outlier)
+importFrom("randomForest",partialPlot)
 import(e1071)
 import(methods)
-
-
-
-
+import(ggplot2)
+import(caret)

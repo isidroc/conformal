@@ -40,9 +40,9 @@ ErrorModel <- function(PointPredictionModel,x.train,algorithm="svmRadial",...){
 #############################################
 expGrid <- function (power.from, power.to, power.by, base)
 {
-    grid <- c()
+    Grid <- c()
     for (i in seq(power.from, power.to, power.by)) {
-        grid <- append(grid, base^i)
+        Grid <- append(Grid, base^i)
     }
-    return(grid)
+    return(Grid)
 }

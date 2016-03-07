@@ -1,5 +1,5 @@
 
-R version 3.1.2 (2014-10-31) -- "Pumpkin Helmet"
+R version 3.0.3 (2014-03-06) -- "Warm Puppy"
 Copyright (C) 2014 The R Foundation for Statistical Computing
 Platform: x86_64-apple-darwin10.8.0 (64-bit)
 
@@ -36,11 +36,10 @@ Type 'q()' to quit R.
 Loading required package: caret
 Loading required package: lattice
 Loading required package: ggplot2
-Loading required package: grid
-Loading required package: randomForest
-randomForest 4.6-10
-Type rfNews() to see new features/changes/bug fixes.
 Loading required package: e1071
+Loading required package: grid
+No methods found in "randomForest" for requests: predict.randomForest
+No methods found in "randomForest" for requests: plot.randomForest
 > 
 > base::assign(".oldSearch", base::search(), pos = 'CheckExEnv')
 > cleanEx()
@@ -104,6 +103,9 @@ Class "refObject", by class "envRefClass", distance 3
 +          trControl=trControl,predict.all=TRUE,
 +          keep.forest=TRUE,norm.votes=TRUE,
 +          ntree=nb_trees)
+Loading required package: randomForest
+randomForest 4.6-10
+Type rfNews() to see new features/changes/bug fixes.
 Warning in eval(expr, envir, enclos) :
   model fit failed for Fold1: mtry=  2 Error in randomForest.default(x, y, mtry = param$mtry, ...) : 
   Need at least two classes to do classification.
@@ -182,6 +184,9 @@ Conformal Prediction Class for Classification Instantiated
 > base::assign(".dptime", (proc.time() - get(".ptime", pos = "CheckExEnv")), pos = "CheckExEnv")
 > base::cat("ConformalClassification", base::get(".format_ptime", pos = 'CheckExEnv')(get(".dptime", pos = "CheckExEnv")), "\n", file=base::get(".ExTimings", pos = 'CheckExEnv'), append=TRUE, sep="\t")
 > cleanEx()
+
+detaching 'package:randomForest'
+
 > nameEx("ConformalRegression")
 > ### * ConformalRegression
 > 
@@ -212,6 +217,11 @@ Class "refObject", by class "envRefClass", distance 3
 > #############################################
 > ### Example
 > #############################################
+> 
+> ## NOTE: the model built in this example has low predictive power as 
+> ## only little fraction of the training data set is used in order
+> ## to make the example quick to run.
+> ## Thus, the example merely intends to illustrate the code. 
 > 
 > # Optional for parallel training
 > #library(doMC)
@@ -370,7 +380,7 @@ detaching 'package:kernlab'
 > ###
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  6.909 0.136 7.069 0 0 
+Time elapsed:  7.433 0.137 7.621 0 0 
 > grDevices::dev.off()
 null device 
           1 

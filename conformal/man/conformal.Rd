@@ -41,7 +41,7 @@ In order to calculate confidence intervals, we need a point prediction model,
 to predict the response variable (\eqn{y}), and an error model, to predict errors in prediction (\eqn{\widetilde{\rho}}). 
 The point prediction and error models can be generated with any machine learning algorithm.
 Both the point prediction and error models need to be trained with cross-validation in order to calculate the vector of nonconformity
-scores for the training set, \eqn{D_{i} = \{x_{i}\}^{N_{tr}}_{i}}.
+scores for the training set, \eqn{D_{i} = \{x_{i}\}^{N_{tr}}_{i}} (Figure 1).
 \cr
 The cross-validation predictions generated when training the point prediction model 
 serve to calculate the errors in prediction for the datapoints in the training set, \eqn{y_{i} - \widetilde{y}_{i}}. 
@@ -63,21 +63,27 @@ The \eqn{\alpha} value associated to the user-defined confidence level, \eqn{\al
 
 where \eqn{\equiv} indicates equality. 
 Next, the errors in prediction, \eqn{\widetilde{\rho}_{ext}}, 
-and the value for the response variable, \eqn{y_{ext}},
+and the value for the response variable, \eqn{\widetilde{y}_{ext}},
 for the datapoints in the external dataset
 are predicted with the error and the point prediction models, respectively.
 
 Individual confidence intervals (CI) for each datapoint in the external set are derived from:
 \eqn{$ CI_{ext\ j} = |y_{ext\ j} - \widetilde{y}_{ext\ j}|   =  \alpha_{\epsilon} * \widetilde{\rho}_{ext\ j} $}
-
+where \eqn{y_{ext}} corresponds to the true value (unkown for the external data) of y (i.e. the value of the dependent variable for those datapoints in the external dataset).
+\cr
 The confidence region (CR) is finally defined as:
-\eqn{$ CR = \widetilde{y}_{ext \j} +/- CI_{ext \j} $}
+\eqn{$ CR = \widetilde{y}_{ext\ j} +/- CI_{ext\ j} $}
 
 The interpretation of the confidence regions is straightforward.
 For instance, it we choose a confidence level of 80\%
 the true value for new datapoints will lie outside the predicted confidence regions
 in at most 20\% of the cases.
 
+\figure{regressionScheme.pdf}{options: width=14cm} {Figure 1. Scheme followed for the calculation of conformal prediction errors in regression.}
+\cr
+\cr
+
+% -------------------------------------------------------------------------------------------------
 \bold{Classification}
 
 
@@ -101,29 +107,31 @@ Here, we have implemented the pipeline proposed by Norinder et al. 2014 [2] usin
 Nevertheless, other ensemble methods could be used to calculate the nonconformity scores.
 
 
-\figure{classificationScheme.pdf}{options: width=14cm} {Figure 1. Calculation of conformal prediction errors (p.values) in a binary classification example considering a confidence level of 0.80.}
+\figure{classificationScheme.pdf}{options: width=14cm} {Figure 2. Calculation of conformal prediction errors (p.values) in a binary classification example considering a confidence level of 0.80.}
 
 Next, each column of the matrix is sorted in increasing order. 
-These columns are called Mondrian class lists (MCL) (Figure 1A).
+These columns are called Mondrian class lists (MCL) (Figure 2A).
 As in regression, a confidence level, \eqn{\epsilon}, needs to be specified.
 We define significance as \eqn{1-\epsilon}.
 \cr
 
 The model trained on the whole dataset is used to classify 
-the datapoints comprised in the external dataset (Figure 1B).
+the datapoints comprised in the external dataset (Figure 2B).
 Let's consider one datapoint from the external set, namely \eqn{x_{ext\ j}}.
 The number of trees in the Random Forest 
 voting for each class is computed, 
 which enables the caculation of the nonconformity scores or probabilities (\eqn{p}) for that point, \eqn{x_{ext\ j}}.
 In the binary case, this is defined as: 
-\eqn{$ p(x_{ext\ j}; A) = \frac {N_{trees} voting A} {N_{trees}}; \  \  p(x_{ext\ j}; B) = \frac {N_{trees} voting B} {N_{trees}}  $}
+\eqn{$ p(x_{ext\ j}; A) = \frac {N_{trees} voting A} {N_{trees}} $};
+\eqn{$ p(x_{ext\ j}; B) = \frac {N_{trees} voting B} {N_{trees}}  $}
 
 To calculate the p.values for each class,
 the number of elements in the corresponding Mondrian class list
 smaller than the probability values, i.e. \eqn{p(x_{ext\ j}; A)} and \eqn{p(x_{ext\ j}; B)},
 is divided by the number of datapoints in the training set, \eqn{N_{tr}}:
 
-\eqn{$ p.value(x_{ext\ j}; A) = \frac {|\{ MCL(A) < P(x_{ext\ j}; A)  \}|} { N_{tr}};\  \   p.value(x_{ext\ j}; B) = \frac {|\{ MCL(B) < P(x_{ext\ j}; B)\}|} {N_{tr}}$}
+\eqn{$ p.value(x_{ext\ j}; A) = \frac {|\{ MCL(A) < P(x_{ext\ j}; A)  \}|} { N_{tr}} $};
+\eqn{$ p.value(x_{ext\ j}; B) = \frac {|\{ MCL(B) < P(x_{ext\ j}; B)\}|} {N_{tr}} $}
 
 Finally, these p.values are compared to the significance level defined by the user (\eqn{1-\epsilon}).
 For a datapoint to be predicted to belong to a given class,

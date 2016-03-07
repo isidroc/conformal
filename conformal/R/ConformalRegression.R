@@ -1,4 +1,4 @@
-## Isidro Cortés Ciriano. 10/2014
+## Isidro Cortes Ciriano. 2016-10-01
 ## Conformal Prediction for caret regression models
 
 
@@ -61,7 +61,7 @@ ConformalRegression <- setRefClass(
       else{
         data.new <<- new.data
       }
-      require("caret") || stop("Pacakge 'caret' is required")
+      #require("caret") || stop("Pacakge 'caret' is required")
       
       print("Predicting (i) the value, and (ii) the error for the new data..")
       cat('\n')

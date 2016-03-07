@@ -2,9 +2,13 @@
 ** R
 ** data
 ** preparing package for lazy loading
+No methods found in "randomForest" for requests: predict.randomForest
+No methods found in "randomForest" for requests: plot.randomForest
 ** help
 *** installing help indices
 *** copying figures
 ** building package indices
 ** testing if installed package can be loaded
+No methods found in "randomForest" for requests: predict.randomForest
+No methods found in "randomForest" for requests: plot.randomForest
 * DONE (conformal)
