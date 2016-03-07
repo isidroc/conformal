@@ -14,6 +14,16 @@ To install conformal:
 2. Install from github with dev.tools by typing in R: library(devtools); install_github("isidroc/conformal/conformal")
 3. Install from CRAN by typing in R: install.packages("conformal")
 
+Documentation
+--------
+https://cran.r-project.org/web/packages/conformal/conformal.pdf
 
 
+Classification
+--------
 
+![alt text](https://cdn.rawgit.com/isidroc/conformal/master/conformal/man/figures/classificationScheme.svg)
+
+Regression
+---------
+![alt text](https://github.com/isidroc/conformal/blob/master/conformal/man/figures/regressionScheme.svg)
