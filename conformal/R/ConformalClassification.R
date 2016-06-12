@@ -70,7 +70,8 @@ ConformalClassification <- setRefClass(
       # library(plyr)
       # now <- t(apply(out,1,function(x){ apply(aaply(NonconformityScoresMatrix, 1, "<", x),2,sum)    }))
       # http://stackoverflow.com/questions/20596433/how-to-divide-each-row-of-a-matrix-by-elements-of-a-vector-in-r
-      pval_signif <- (pval > (1-confidence))*1
+      #pval_signif <- (pval > (1-confidence))*1
+      pval_signif <- (pval > confidence)*1
       p.values <<- list(P.values = pval,Significance_p.values = pval_signif)
     }
 
