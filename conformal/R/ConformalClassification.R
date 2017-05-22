@@ -54,7 +54,7 @@ ConformalClassification <- setRefClass(
       cat('\n')
       pred <- predict(ClassificationModel$finalModel, newdata = new.data,predict.all=TRUE) # individual or aggregate
       ClassPredictions <<- pred
-      ntrees <- model$finalModel$ntree
+      ntrees <- ClassificationModel$finalModel$ntree
       votes <- apply(pred$individual,1,function(x){table(x)})
       out<-c()
       for (i in colnames(NonconformityScoresMatrix)){
